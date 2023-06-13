@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal</title>
+    <link href="./style.css" type='text/css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="homeheader">
+        <a href="/"><img src="resources/logo.png" width="300"></a>
+    <nav>
+        <span>
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="#">Page</a>
+        <a href="#">About</a>
+        <a href="#">Pages</a>
+        <a class="log" href="#"><i class="fas fa-user-ninja" style="font-size: 32px;"></i></a>
+        <a class="log" href="#"><i class="fas fa-shopping-cart" style="font-size: 32px;"></i></a>
+        <a class="log" href="#"><i class="far fa-user" style="font-size: 32px;"></i></a>
+        </span>
+    </nav>
+    <div class="cont">
+            <span style="font-size: 30px; font-weight: 600;">Welcome Royal</span>
+           <p>Tiny and perfect ecommerce jewerly</p>
+            Royal is a jewerly shop, 40% off on everything!<br><br>
+            <span class="buynow">
+            <a class="but" href="#">Buy Now</a> <a class="but" href="#">New Brands</a>
+            </span>
+    </div>
+    </header>
+    <section><br>
+        <center>
+        <center class="popular">Pupolar Items</center>
+        <div class="thot"><br><br>
+                    <th>
+                        <div class="product"><img src="/resources/Products/clock.jpg">
+                            <div class="insideproduct">
+                                <h4><b>Gant Classic Ocean</b></h4> 
+                                <p>2499$</p> 
+                                <center>
+                                <button type="button" class="buy">Buy Now</button> 
+                                </center>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="product"><img src="/resources/Products/ring.jpg">
+                            <div class="insideproduct">
+                                <h4><b>White Diamond Ring</b></h4> 
+                                <p>16499$</p> 
+                                <center>
+                                <button type="button" class="buy">Buy Now</button> 
+                                </center>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="product"><img src="/resources/Products/earrings.jpg">
+                            <div class="insideproduct">
+                                <h4><b>Diamond Earrings</b></h4> 
+                                <p>3000$</p>
+                                <center>
+                                <button type="button" class="buy">Buy Now</button> 
+                                </center>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="product"><img src="/resources/Products/hand.jpg">
+                            <div class="insideproduct">
+                                <h4><b>Bracelet</b></h4> 
+                                <p>650$</p> 
+                                <center>
+                                <button type="button" class="buy">Buy Now</button> 
+                                </center>
+                            </div>
+                      </div>
+                    </th>
+                    <th>
+                        <div class="product"><img src="/resources/Products/neckles.jpg">
+                            <div class="insideproduct">
+                                <h4><b>Golden Heart Neckless</b></h4> 
+                                <p>150$</p>
+                                <center>
+                                <button type="button" class="buy">Buy Now</button> </center>
+                            </div>
+                      </div>
+                    </th>
+        </div>
+        <br><br>
+        </center>
+    </section>
+    <script src="public/js.js"></script>
+</body>
 </html>

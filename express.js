@@ -1,22 +1,16 @@
 require('dotenv').config();
 var express = require("express");
 var path = require("path");
-var mongoose = require("mongoose");
-var config = require("./Backend/config/database");
+var connectDB = require("./Backend/config/database");
 
 // connect to db
-mongoose.connect(config.database);
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'Cannot connect db'));
-db.once('open', function(){
-    console.log('Connected to MongoDB');
-});
+connectDB();
 
 // Init app
 app = express();
 
 // Set folders
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/frontend/public'));
 
 // Set Router
 var pages = require('./Backend/config/pages');

@@ -1,4 +1,4 @@
-var mongoose = require("moongose");
+var mongoose = require("mongoose");
 
 var productSchema = new mongoose.Schema({
     name:{
@@ -25,4 +25,4 @@ var productSchema = new mongoose.Schema({
 
 const Product = mongoose.model('product', productSchema);
 
-module.exports = product;
+module.exports = Product;

@@ -15,7 +15,8 @@
     "start": "node express.js",
     "server": "nodemon express.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node Backend/seederScript.js"
   },
   "keywords": [],
   "author": "",
