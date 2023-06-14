@@ -9,11 +9,15 @@ connectDB();
 // Init app
 app = express();
 
-// Set folders
-app.use(express.static(__dirname + '/frontend/public'));
+// set ejs engine
+app.set("frontend", path.join(__dirname, "frontend"));
+app.set("view engine", "ejs");
 
-// Set Router
-var pages = require('./Backend/config/pages');
+// Set folders
+app.use(express.static(__dirname + '/views/public'));
+
+// Set Routers
+var pages = require('./Backend/config/routePages');
 var adminPages = require('./Backend/config/admin_pages');
 
 app.use('/admin/pages', adminPages);
