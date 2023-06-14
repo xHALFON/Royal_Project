@@ -1,19 +1,43 @@
 const products = [
     {
-        name: "Ring",
-        imageUrl: ".../frontend/public/resources/Products/ring.jpg",
+        name: "Diamond Ring",
+        imageUrl: "./resources/products/ring.jpg",
         description: "Diamond Ring",
-        price: 1500,
-        countInStock: 5,
+        price: 16495,
+        countInStock: 1,
         category: "ring",
     },
     {
-        name: "Diamon Necklace",
-        imageUrl: ".../frontend/public/resources/Products/neckless.jpg",
-        description: "Diamond neckless",
-        price: 9500,
-        countInStock: 2,
+        name: "Classic Gant Watch",
+        imageUrl: "./resources/products/clock.jpg",
+        description: "Gant classic",
+        price: 4550,
+        countInStock: 6,
+        category: "clock",
+    },
+    {
+        name: "Golden Necklace",
+        imageUrl: "./resources/products/neckles.jpg",
+        description: "Necklace",
+        price: 350,
+        countInStock: 4,
         category: "necklace",
+    },
+    {
+        name: "Gold Braces",
+        imageUrl: "./resources/products/hand.jpg",
+        description: "Braces",
+        price: 120,
+        countInStock: 11,
+        category: "brace",
+    },
+    {
+        name: "Ore Earrings",
+        imageUrl: "./resources/products/earrings.jpg",
+        description: "earrings",
+        price: 1330,
+        countInStock: 9,
+        category: "earrings",
     }
 ];
 
