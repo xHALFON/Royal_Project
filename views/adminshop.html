@@ -21,7 +21,13 @@
     </header>
     <section>
         <center>Welcome Admin<br><br>
-        <button type="submit" onclick="linktoadd()" class="buy">Add Product</button><br></center>
+            <button type="submit" style="display: inline;" onclick="linktoadd()" class="buy">Add Product</button>
+
+            <form action="/remove" style="display: inline;" method="post" role="form">
+            <button type="submit" style="display: inline;" class="buy">Remove Product</button>
+            <input class="inputlog"style="display: inline; width: 60px;" name="id" type="number" placeholder="ID"></input><br>
+            </form>
+        </center>
             <span class="leftcont">
                 <form id="searchForm">
                     <input class="searchproduct" type="search" name="searchField" placeholder="Search Product">

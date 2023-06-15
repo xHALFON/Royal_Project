@@ -33,7 +33,18 @@ router.post('/add', async function(req, res) {
       res.status(500).send('Server Error');
     }
   });
-
+  // remove product
+  router.post('/remove', async function(req, res) {
+    try {
+      var productId = req.body.id;
+      await modelproduct.deleteOne({ id: productId });
+      console.log('Product removed from the database');
+      res.redirect('/adminshophUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Server Error');
+    }
+  });
 // routing
 router.get('/', async function(req,res){
     res.sendFile(path.resolve('./views/index.html'));

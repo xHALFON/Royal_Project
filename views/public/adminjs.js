@@ -58,10 +58,7 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`;
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> <p style="color: red;">ID: ${product.id}</p>`;
         }
     }else if(window.location.href.indexOf("shop_necklace") > -1){
         const product = products[i];
@@ -73,10 +70,7 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`; 
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> <p style="color: red;">ID: ${product.id}</p>`; 
         }
     }else if(window.location.href.indexOf("shop_brace") > -1){
         const product = products[i];
@@ -88,10 +82,7 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`; 
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p><p style="color: red;">ID: ${product.id}</p> `; 
         }
     }else if(window.location.href.indexOf("shop_clock") > -1){
         const product = products[i];
@@ -103,10 +94,7 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`;
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> <p style="color: red;">ID: ${product.id}</p>`;
         }
     }else if(window.location.href.indexOf("shop_earrings") > -1){
         const product = products[i];
@@ -118,10 +106,7 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`;
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> <p style="color: red;">ID: ${product.id}</p>`;
         }
         }else{ // Prints all products
         const product = products[i];
@@ -133,10 +118,7 @@ function renderProducts() {
         img.setAttribute('style','width: 175px;');
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="submit" class="buy">Remove Product</button>  
-        </center>`;
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p><p style="color: red;">ID: ${product.id}</p> `;
     }
     i++;
 }

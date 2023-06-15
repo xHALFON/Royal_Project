@@ -146,7 +146,11 @@ function renderProducts() {
     i++;
 }
 }
-
+document.addEventListener("keyup", function(key) {
+    if (key.key == 'Enter') {
+        log();
+    }
+});
 function log(){
    var name = document.getElementById('username').value;
    var pass = document.getElementById('password').value;
