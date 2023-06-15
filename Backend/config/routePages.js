@@ -59,6 +59,18 @@ router.get('/login', async function(req,res){
     res.sendFile(path.resolve('./views/login.html'));
 });
 
+router.get('/about', async function(req,res){
+    res.sendFile(path.resolve('./views/about.html'));
+});
+
+router.get('/customers', async function(req,res){
+    res.sendFile(path.resolve('./views/customers.html'));
+});
+
+router.get('/locations', async function(req,res){
+    res.sendFile(path.resolve('./views/locations.html'));
+});
+
 /*-------------Shop-----------------*/ 
 router.get('/shop', async function(req,res){
     res.sendFile(path.resolve('./views/shop.html'));
