@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal</title>
+    <link href="style.css" type='text/css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   
+
+    <header>
+        <a href="/"><img src="resources/logo.png" width="300"></a>
+    <nav>
+        <span>
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="#">Page</a>
+        <a href="#">About</a>
+        <a href="#">Pages</a>
+        <a class="log" href="#"><i class="fas fa-shopping-cart" style="font-size: 32px;"></i></a>
+        <a class="log" href="/login"><i class="far fa-user" style="font-size: 32px;"></i></a>
+        </span>
+    </nav>
+    </header>
+    <section>
+        <center>
+        <div class="logincontainer">
+            <form>
+                <p id="errorlogmsg" class="errorlogmsg"></p>
+                <span class="title1">Sign In</span><br>
+                <input id="username" class="inputlog" type="text" placeholder="Username"></input><br>
+                <input id="password"  class="inputlog" type="password"placeholder="Password"></input><br>
+                <span>Sign in with <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a></span><br>
+                <button class="logbtn" type="button" onclick="log()">Sign In</button>
+            </form>
+        </div>
+        </center>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/js.js"></script>
+</body>
+</html>

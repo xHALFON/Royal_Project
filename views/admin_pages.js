@@ -1,8 +1,8 @@
 var express = require("express");
+var path = require("path");
+var app = express();
 var router = express.Router();
 
-router.get('/', function(req,res){
-    res.send("Hello admin");
-});
+
 
 module.exports = router;

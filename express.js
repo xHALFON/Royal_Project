@@ -17,9 +17,6 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/views/public'));
 // Set Routers
 var pages = require('./Backend/config/routePages');
-var adminPages = require('./Backend/config/admin_pages');
-
-app.use('/admin/pages', adminPages);
 app.use('/', pages);
 // Start Server
 const port = 3300;

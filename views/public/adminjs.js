@@ -59,8 +59,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`;
         }
     }else if(window.location.href.indexOf("shop_necklace") > -1){
@@ -74,8 +74,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`; 
         }
     }else if(window.location.href.indexOf("shop_brace") > -1){
@@ -89,8 +89,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`; 
         }
     }else if(window.location.href.indexOf("shop_clock") > -1){
@@ -104,8 +104,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`;
         }
     }else if(window.location.href.indexOf("shop_earrings") > -1){
@@ -119,8 +119,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`;
         }
         }else{ // Prints all products
@@ -133,8 +133,8 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="submit" class="buy">Add Cart</button> 
+        <center> 
+        <button type="submit" class="buy">Remove Product</button>  
         </center>`;
     }
     i++;
@@ -152,4 +152,8 @@ function log(){
         msg.style.display = "block";
         msg.innerHTML = "Error: Username or Password are Wrongs."
     }
+}
+
+function linktoadd(){
+    window.location.assign('/adminaddproducthUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
 }
