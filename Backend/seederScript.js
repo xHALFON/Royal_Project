@@ -8,7 +8,6 @@ connectDB();
 
 const importData = async() => {
     try {
-        await Product.deleteMany({});
         await Product.insertMany(productsData);
     console.log("Data import success");
     process.exit();

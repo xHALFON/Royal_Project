@@ -7,6 +7,34 @@ var products;
 // var cors = require('cors');
 var modelproduct = require('../models/products');
 
+// adding product
+var bodyParser = require("body-parser");
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
+
+router.post('/add', async function(req, res) {
+    try {
+      var newProduct = new modelproduct({
+        name: req.body.name,
+        description: req.body.description,
+        price: req.body.price,
+        countInStock: req.body.countInStock,
+        imageUrl: req.body.imageUrl,
+        category: req.body.category,
+        id: req.body.id
+      });
+  
+      await newProduct.save();
+  
+      console.log('Product added to the database');
+      res.redirect('/adminaddproducthUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Server Error');
+    }
+  });
+
+// routing
 router.get('/', async function(req,res){
     res.sendFile(path.resolve('./views/index.html'));
 });

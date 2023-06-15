@@ -22,15 +22,22 @@
     <section>
         <center>
             <div class="logincontainer">
-                <form>
-                    <input class="inputlog" type="text" placeholder="name"></input><br>
-                    <input class="inputlog" type="text" placeholder="price"></input><br>
-                    <input class="inputlog" type="text" placeholder="id"></input><br>
-                    <input class="inputlog" type="text" placeholder="description"></input><br>
-                    <input class="inputlog" type="text" placeholder="countInStock"></input><br>
-                    <input class="inputlog" type="text" placeholder="imageUrl"></input><br>
-                    <input class="inputlog" type="password"placeholder="category"></input><br><br>
-                    <button class="logbtn" type="button" onclick="log()">Add product</button>
+                <form action="/add" id="EmployeeForm" class="form-horizontal" method="post" role="form">
+                    <input class="inputlog" name="name" type="text" placeholder="name"></input><br>
+                    <input class="inputlog" name="description" type="text" placeholder="description"></input><br>
+                    <input class="inputlog" name="price" type="number" placeholder="price"></input><br>
+                    <input class="inputlog" name="countInStock" type="number" placeholder="countInStock"></input><br>
+                    <input class="inputlog" name="imageUrl" type="text" value="./resources/products/" placeholder="imageUrl"></input>
+                    <br>
+                    <select name="category">
+                        <option value="brace">Brace</option>
+                        <option value="necklace">Necklace</option>
+                        <option value="earrings">Earrings</option>
+                        <option value="ring">Ring</option>
+                        <option value="clock">Clock</option>
+                    </select><br>
+                    <input class="inputlog" name="id" type="number" placeholder="id"></input><br>
+                    <button class="logbtn" type="submit" name="submit">Add product</button>
                 </form>
             </div>
             </center>
@@ -39,3 +46,102 @@
     <script type="text/javascript" src="/adminjs.js"></script>
 </body>
 </html>
+
+
+<!--
+
+<header>Welcome Admin!</header>
+<div class="container">
+  <div class="row">
+    <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="panel-title">Product Details Form</div>
+        </div>  
+        <div class="panel-body">
+          <form action="/admin/pages/add" id="EmployeeForm" class="form-horizontal" method="post" role="form">
+            <div id="signupalert" style="display:none" class="alert alert-danger">
+              <p>Error:</p>
+              <span></span>
+            </div>
+            <div class="form-group">
+              <label for="name" class="col-md-3 control-label">Name</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="name" placeholder="Enter product Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description" class="col-md-3 control-label">Description</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="description" placeholder="Enter product description">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="price" class="col-md-3 control-label">Price</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="price" placeholder="Enter product price">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="countInStock" class="col-md-3 control-label">Count in stock</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="countInStock" placeholder="Enter count in stock">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="imageUrl" class="col-md-3 control-label">Image URL</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="imageUrl" placeholder="Enter Image URL">
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="id" class="col-md-3 control-label">ID</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" name="id" placeholder="Enter product id">
+                </div>
+              </div>
+            <div class="form-group">
+              <label for="category" class="col-md-3 control-label">Category</label>
+              <div class="col-md-9">
+                <select class="form-control" name="category">
+                  <option value="Brace">Brace</option>
+                  <option value="Necklace">Necklace</option>
+                  <option value="Clock">Clock</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-3 col-md-9">
+                <br>
+                <input type="submit" name="submit" value="Add to database" class="btn btn-primary">     
+              </div>
+            </div>
+          </form>
+
+
+
+
+
+          <form action="/admin/pages/remove" id="RemoveProductForm" class="form-horizontal" method="post" role="form">
+            <div class="form-group">
+              <label for="productId" class="col-md-3 control-label">Product ID</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" name="id" placeholder="Enter product ID">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-3 col-md-9">
+                <br>
+                <input type="submit" name="submit" value="Remove from database" class="btn btn-primary">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+
+-->

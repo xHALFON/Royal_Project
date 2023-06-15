@@ -24,6 +24,10 @@ var productSchema = new mongoose.Schema({
     category:{
         type: String,
         required: true
+    },
+    id:{
+        type: Number,
+        required: true
     }
 });
 
