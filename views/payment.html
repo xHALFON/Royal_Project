@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal</title>
+    <link href="./style.css" type='text/css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.inputrow {
+  width: 70%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.paymentsub {
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 0 16px;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+  padding: 0 0px;
+}
+
+.paymentcont {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.payinput[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-paymentcont {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.clickpay {
+  background-color: rgb(255, 202, 138);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  color: black;
+}
+
+.clickpay:hover {
+  background-color: rgb(255, 214, 163);
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="/"><img class="mainlogo" src="resources/logo.png" width="250"></a>
+        <nav>
+            <span>
+            <a href="/">Cancel Purchase</a>
+            </span>
+        </nav>
+    </header>
+    <section>
+        <center>
+        <br><br>
+    <div class="inputrow" style="box-shadow: 2px 2px 16px 2px;">
+        <div class="col-75">
+          <div class="paymentcont">
+            <form action="/paymentreached" method="post">
+            
+              <div class="inputrow">
+                <div class="paymentsub">
+                  <h3>Billing Address</h3>
+                  <i class="fa fa-user"></i>
+                  <input class="payinput" type="text" id="fname" name="firstname" placeholder="Full Name">
+                  <i class="fa fa-envelope"></i>
+                  <input class="payinput" type="text" id="email" name="email" placeholder="Email@example.com">
+                  <i class="fa fa-address-card-o"></i>
+                  <input class="payinput" type="text" id="adr" name="address" placeholder="Adress">
+                  <i class="fa fa-institution"></i>
+                  <input class="payinput" type="text" id="city" name="city" placeholder="City">
+
+                  <div class="inputrow">
+                    <div class="paymentsub">
+                      <input class="payinput" type="text" id="state" name="state" placeholder="State">
+                    </div>
+                    <div class="paymentsub">
+                      <input class="payinput" type="text" id="zip" name="zip" placeholder="zip">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="paymentsub">
+                  <h3>Payment</h3><br>
+                  <input class="payinput" type="text" id="cname" name="cardname" placeholder="Name on card"><br><br>
+                  <input class="payinput" type="text" id="ccnum" name="cardnumber" placeholder="Card number"><br><br>
+                  <input class="payinput" type="text" id="expmonth" name="expmonth" placeholder="card validity"><br><br>
+                  <div class="inputrow">
+                    <div class="paymentsub">
+                      <input class="payinput" type="text" id="expyear" name="expyear" placeholder="Exp Year">
+                    </div>
+                    <div class="paymentsub">
+                      <input class="payinput" type="text" id="cvv" name="cvv" placeholder="CVV">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <p id="price"></p>
+              <div class="icon-paymentcont">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <input type="submit" value="Purchase" class="clickpay">
+            </form>
+          </div>
+        </div>
+        </center>
+        <br>
+    </section>
+    <footer style="position: fixed; width:100%; bottom:0;">
+        <div class="footer">
+            <span>
+            <h3><b>Find us:</h3></b>
+            <a href="https://www.facebook.com/profile.php?id=100093534376301&notif_id=1686829559217200&notif_t=profile_plus_admin_invite&ref=notif"> <i class="fab fa-facebook-f" style="margin-right: 5px;"> </i> Facebook</a>
+            <span style="float: right; padding-right: 45%;"><b>Copyrights &copy all rights reserved</b></span><br>
+            <a href="https://github.com/xHALFON/Royal_Project"><i class="fab fa-github" style="margin-right: 5px;"> </i>GitHub</a>
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/js.js"></script>
+</body>
+</html>

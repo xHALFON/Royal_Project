@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="toblur1">
         <a href="/"><img class="mainlogo" src="resources/logo.png" width="250"></a>
         <nav>
             <span>
@@ -18,37 +18,78 @@
             <a href="/about">About</a>
             <a href="/customers">Customers</a>
             <a href="/locations">Locations</a>
-            <a class="log" href="#"><i class="fas fa-shopping-cart" style="font-size: 28px;"></i></a>
+            <a class="log" onclick="cartdis()"><i class="fas fa-shopping-cart" style="cursor: pointer;font-size: 28px;"></i></a>
             <a class="log" href="/login"><i class="far fa-user" style="font-size: 28px;"></i></a>
             </span>
         </nav>
     </header>
     <section>
-            <span class="leftcont">
-                <form id="searchForm">
-                    <input class="searchproduct" type="search" name="searchField" placeholder="Search Product">
-                    <input class="searchbtn" type="submit" value="Search" onclick="show()"><br><br>
-                </form>
-                    <i class="fa fa-calendar"></i> <u><b>Category:</b></u><br>
-                    <a class="categoryleft" href="/shop">All Products</a><br>
-                    <a class="categoryleft" href="/shop_ring">Rings</a><br>
-                    <a class="categoryleft" href="/shop_clock">Clocks</a><br>
-                    <a class="categoryleft" href="/shop_necklace">Necklaces</a><br>
-                    <a class="categoryleft" href="/shop_brace">Bracelets</a><br><hr>
-                    <i class="fa fa-sort"></i> <u><b>Sort By:</b></u><br>
-                    <a class="categoryleft" href="shop_SortByPrice">Price</a><br>
-                    <a class="categoryleft" href="shop_SortByCategory">Category</a><br>
-                    <a class="categoryleft" href="shop_SortByName">Name</a><br>
-                    <hr>
-                    <i class="fa fa-bolt"></i> <b><a class="categoryleft" href="/shop_brands">Hots/New brands</a></b><br>
-   
-            </span>
-            <div class="container">
+        <center><p id="cartmsg" class="errorcartmsg"></p></center>
+            <div class="container" id="toblur2">
+                <span class="leftcont">
+                    <form id="searchForm">
+                        <input class="searchproduct" type="search" name="searchField" placeholder="Search Product">
+                        <input class="searchbtn" type="submit" value="Search" onclick="show()"><br><br>
+                    </form>
+                        <i class="fa fa-calendar"></i> <u><b>Category:</b></u><br>
+                        <a class="categoryleft" href="/shop">All Products</a><br>
+                        <a class="categoryleft" href="/shop_ring">Rings</a><br>
+                        <a class="categoryleft" href="/shop_clock">Clocks</a><br>
+                        <a class="categoryleft" href="/shop_necklace">Necklaces</a><br>
+                        <a class="categoryleft" href="/shop_brace">Bracelets</a><br><hr>
+                        <i class="fa fa-sort"></i> <u><b>Sort By:</b></u><br>
+                        <a class="categoryleft" href="shop_SortByPrice">Price</a><br>
+                        <a class="categoryleft" href="shop_SortByCategory">Category</a><br>
+                        <a class="categoryleft" href="shop_SortByName">Name</a><br>
+                        <hr>
+                        <i class="fa fa-bolt"></i> <b><a class="categoryleft" href="/shop_brands">Hots/New brands</a></b><br>
+       
+                </span>
         <div class="thot">
                 <div id="productList"></div>
         </div>
     </div>
+    <div id="cartcont" class="cartcont">
+        <span class="exitcartbtn"><button style="background-color: transparent; border: none; cursor: pointer;"><img src="resources/close.png" onclick="cartdis()" width="30px"></button></span>
+        <span id="cartitems" class="cartProductList">
+            <table id="cartTable">
+                <tr class="head">
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th>
+                        CountInStock
+                    </th>
+                    <th>
+                        Product ID
+                    </th>
+                    <th style="border:none;">
+                        View
+                    </th>
+                </tr>
+            </table>
+            <center>
+                <p id="price">0</p>
+                <a href="/payment"><button type="button" class="buy" style="width: 300px; display:inline-block; text-align:center; margin:8px;">Buy All</button></center></a>
+        </span>
+    </div>
     </section>
+    <footer style="margin-top: 200px;">
+        <div class="footer" id="toblur3">
+            <span>
+            <h3><b>Find us:</h3></b>
+            <a href="https://www.facebook.com/profile.php?id=100093534376301&notif_id=1686829559217200&notif_t=profile_plus_admin_invite&ref=notif"> <i class="fab fa-facebook-f" style="margin-right: 5px;"> </i> Facebook</a>
+            <span style="float: right; padding-right: 45%;"><b>Copyrights &copy all rights reserved</b></span><br>
+            <a href="https://github.com/xHALFON/Royal_Project"><i class="fab fa-github" style="margin-right: 5px;"> </i>GitHub</a>
+            </span>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="/js.js"></script>
 </body>

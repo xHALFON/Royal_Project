@@ -36,15 +36,23 @@ router.post('/add', async function(req, res) {
   // remove product
   router.post('/remove', async function(req, res) {
     try {
-      var productId = req.body.id;
+      var productId = 0;
+      productId = req.body.id;
       await modelproduct.deleteOne({ id: productId });
+      if(productId != 0){
       console.log('Product removed from the database');
+      }
       res.redirect('/adminshophUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
     } catch (error) {
       console.error(error);
       res.status(500).send('Server Error');
     }
   });
+  //payment paymentreached
+  router.post('/paymentreached', async function(req, res) {
+    res.send(`<h1>Thank you for buying <a href='/'>Back to Royal</a></h1>`)
+  });
+
 // routing
 router.get('/', async function(req,res){
     res.sendFile(path.resolve('./views/index.html'));
@@ -69,6 +77,10 @@ router.get('/customers', async function(req,res){
 
 router.get('/locations', async function(req,res){
     res.sendFile(path.resolve('./views/locations.html'));
+});
+
+router.get('/payment', async function(req,res){
+    res.sendFile(path.resolve('./views/payment.html'));
 });
 
 /*-------------Shop-----------------*/ 
