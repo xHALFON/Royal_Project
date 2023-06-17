@@ -56,6 +56,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         img.src = product.imageUrl;
@@ -72,6 +74,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         img.src = product.imageUrl;
@@ -88,6 +92,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         img.src = product.imageUrl;
@@ -104,6 +110,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         img.src = product.imageUrl;
@@ -120,6 +128,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         img.src = product.imageUrl;
@@ -135,6 +145,8 @@ function renderProducts() {
         const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
         var img = t.appendChild(document.createElement('img'));
         img.src = product.imageUrl;
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
