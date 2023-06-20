@@ -19,6 +19,7 @@ function saveProducts(data) {
     products.push(data[i]);
   }
 }
+
 function dynamicSort(property) { // sort function
     var sortOrder = 1;
     if(property[0] === "-") {
@@ -140,3 +141,96 @@ function log(){
 function linktoadd(){
     window.location.assign('/adminaddproducthUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
 }
+
+function ShowGraph(){
+    var purchasering = 0;
+    var purchasenecklace = 0;
+    var purchasebrace = 0;
+    var purchaseearring = 0;
+    var purchaseclock = 0;
+    for(i = 0; i < products.length; i++){
+        if(products[i].category == "ring"){
+            purchasering =  purchasering + products[i].purchased;
+        }
+        if(products[i].category == "necklace"){
+            purchasenecklace =  purchasenecklace + products[i].purchased;
+        }
+        if(products[i].category == "brace"){
+            purchasebrace =  purchasebrace + products[i].purchased;
+        }
+        if(products[i].category == "earrings"){
+            purchaseearring =  purchaseearring + products[i].purchased;
+        }
+        if(products[i].category == "clock"){
+            purchaseclock =  purchaseclock + products[i].purchased;
+        }
+
+    }
+    var chart = JSC.chart('chartDiv', {
+    debug: true,
+    type: 'column',
+    title_label_text: 'Purchases by Category',
+    legend_position: 'inside top right',
+    yAxis_label_text: "Purchases",
+    xAxis_label_text: "Category",
+    legend_defaultEntry_style_color: "red",
+    series: [
+        {
+        name: 'Purchases',
+        points: [
+            ['Ring', purchasering],
+            ['Clock', purchaseclock],
+            ['Earring', purchaseearring],
+            ['Necklace', purchasenecklace],
+            ['Brace', purchasebrace]
+        ]
+        }
+    ]
+    });    
+
+    var countring = 0;
+    var countnecklace = 0;
+    var countbrace = 0;
+    var countearring = 0;
+    var countclock = 0;
+    for(i = 0; i < products.length; i++){
+        if(products[i].category == "ring"){
+            countring =  countring + products[i].countInStock;
+        }
+        if(products[i].category == "necklace"){
+            countnecklace =  countnecklace + products[i].countInStock;
+        }
+        if(products[i].category == "brace"){
+            countbrace =  countbrace + products[i].countInStock;
+        }
+        if(products[i].category == "earrings"){
+            countearring =  countearring + products[i].countInStock;
+        }
+        if(products[i].category == "clock"){
+            countclock =  countclock + products[i].countInStock;
+        }
+
+    }
+    var chart2 = JSC.chart('chartDiv2', {
+    debug: true,
+    type: 'column',
+    title_label_text: 'CountInStock by Category',
+    legend_position: 'inside top right',
+    yAxis_label_text: "CountInStock",
+    xAxis_label_text: "Category",
+    legend_defaultEntry_style_color: "red",
+    series: [
+        {
+        name: 'CountInStock',
+        points: [
+            ['Ring', countring],
+            ['Clock', countclock],
+            ['Earring', countearring],
+            ['Necklace', countnecklace],
+            ['Brace', countbrace]
+        ]
+        }
+    ]
+    });    
+}
+

@@ -58,6 +58,12 @@ nav a:hover{
     font-size: 30px;
     height: 300px;
 }
+.admcont{
+  color:#161616;
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 30px;
+}
 .buynow{
     display: block;
     margin-top: 40px;
@@ -147,7 +153,6 @@ header nav a.log{
     font-size: 30px;
 }
 /* -----------shop----------- */
-
 .container{
     background-color:  white;
     display: block;
@@ -181,7 +186,14 @@ header nav a.log{
     display: inline-block;
     margin-top: 15px;
     width:auto;
-    color: #161616;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 17px;
+    color: #303030;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 .categoryleft:hover{
     color :red;

@@ -7,8 +7,9 @@
     <title>Royal</title>
     <link href="./style.css" type='text/css' rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
-<body style="background-color: rgb(247, 247, 247);">
+<body style="background-color: rgb(247, 247, 247);" onload="ShowGraph()">
     <header>
         <a href="/hUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ">
         <img src="resources/logo.png" class="mainlogo" width="250"></a>
@@ -21,10 +22,16 @@
         </nav>
     </header>
     <section>
-        <div class="cont">
-            <span style="font-size: 30px; font-weight: 600;">Admin Panel</span><br><span>Be carfully</span>
+        <div class="admcont">
+            <span style="font-size: 30px; font-weight: 600;">Admin Panel</span><br><span>Be carfully</span><br>
+            <button type="button" class="buy" onclick="ShowGraph()">Show Graph</button>
         </div>
+        <div id="chartDiv" style="width:70%; height:300px; margin:0 auto;"></div>
+        <div id="chartDiv2" style="width:70%; height:300px; margin:0 auto;"></div>
+
     </section>
-    <script src="public/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+    <script type="text/javascript" src="/adminjs.js"></script>
 </body>
 </html>

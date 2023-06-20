@@ -35,49 +35,51 @@ function dynamicSort(property) { // sort function
     }
 }
 // Render the products on the page
-function renderProducts() {
+function renderProducts(data) {
     var i = 0;
-    if(window.location.href.indexOf("shop_SortByPrice") > -1){
+    const productElements = document.getElementById('productList');
+    while (productElements.firstChild) {
+        productElements.removeChild(productElements.firstChild);
+    }
+    if(data === 'price'){
         products.sort(dynamicSort("price"));
-    }else if(window.location.href.indexOf("shop_SortByCategory") > -1){
+    }else if(data === 'category'){
         products.sort(dynamicSort("category"));
-    }else if(window.location.href.indexOf("shop_SortByName") > -1){
+    }else if(data === 'name'){
         products.sort(dynamicSort("name"));
-    }else if(window.location.href.indexOf("shop_SortByStock") > -1){
-        products.sort(dynamicSort("countInStock"));
-    }else if(window.location.href.indexOf("shop_brands") > -1){
+    }else if(data === 'brands'){
         i = products.length - 8;
     }
   while (i < products.length) {
-        if(window.location.href.indexOf("shop_ring") > -1){
+        if(data == 'ring'){
+            const product = products[i];
+            const productElement = document.getElementById('productList');
+            if(product.category === "ring"){
+            var t = productElement.appendChild(document.createElement('div'));
+            t.setAttribute('class','product');
+            t.style.animation = "fadeIn 1.5s";
+            t.style.webkitAnimation = "fadeIn 1.5s";
+            var img = t.appendChild(document.createElement('img'));
+            img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
+            img.src = product.imageUrl;
+            var s = t.appendChild(document.createElement('div'));
+            s.setAttribute('class','insideproduct');
+            if(product.countInStock == 0){
+                s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+            <center>
+            <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+            </center>`;
+            }else{
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
+            <center>
+            <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+            </center>`;
+        }
+        }
+    }else if(data == 'necklace'){
         const product = products[i];
-        if(product.category == "ring"){
         const productElement = document.getElementById('productList');
-        var t = productElement.appendChild(document.createElement('div'));
-        t.setAttribute('class','product');
-        t.style.animation = "fadeIn 1.5s";
-        t.style.webkitAnimation = "fadeIn 1.5s";
-        var img = t.appendChild(document.createElement('img'));
-        img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
-        img.src = product.imageUrl;
-        var s = t.appendChild(document.createElement('div'));
-        s.setAttribute('class','insideproduct');
-        if(product.countInStock == 0){
-            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
-        <center>
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
-        </center>`;
-        }else{
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center>
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
-        </center>`;
-        }
-        }
-    }else if(window.location.href.indexOf("shop_necklace") > -1){
-        const product = products[i];
         if(product.category == "necklace"){
-        const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
         t.style.animation = "fadeIn 1.5s";
@@ -99,10 +101,10 @@ function renderProducts() {
         </center>`;
         }
         }
-    }else if(window.location.href.indexOf("shop_brace") > -1){
+    }else if(data === 'brace'){
         const product = products[i];
+        const productElement = document.getElementById('productList');
         if(product.category == "brace"){
-        const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
         t.style.animation = "fadeIn 1.5s";
@@ -124,10 +126,10 @@ function renderProducts() {
         </center>`;
         }
         }
-    }else if(window.location.href.indexOf("shop_clock") > -1){
+    }else if(data === 'clock'){
         const product = products[i];
+        const productElement = document.getElementById('productList');
         if(product.category == "clock"){
-        const productElement = document.getElementById('productList');
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
         t.style.animation = "fadeIn 1.5s";
@@ -149,10 +151,10 @@ function renderProducts() {
         </center>`;
         }
         }
-    }else if(window.location.href.indexOf("shop_earrings") > -1){
+    }else if(data === 'earrings'){
         const product = products[i];
-        if(product.category == "earrings"){
         const productElement = document.getElementById('productList');
+        if(product.category == "earrings"){
         var t = productElement.appendChild(document.createElement('div'));
         t.setAttribute('class','product');
         t.style.animation = "fadeIn 1.5s";

@@ -21,7 +21,8 @@ router.post('/add', async function(req, res) {
         countInStock: req.body.countInStock,
         imageUrl: req.body.imageUrl,
         category: req.body.category,
-        id: req.body.id
+        id: req.body.id,
+        purchased: req.body.purchased
       });
   
       await newProduct.save();
@@ -102,44 +103,7 @@ router.get('/payment', async function(req,res){
     res.sendFile(path.resolve('./views/payment.html'));
 });
 
-/*-------------Shop-----------------*/ 
 router.get('/shop', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_ring', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_necklace', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_brace', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_earrings', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_clock', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_SortByPrice', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_SortByCategory', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_SortByName', async function(req,res){
-    res.sendFile(path.resolve('./views/shop.html'));
-});
-
-router.get('/shop_brands', async function(req,res){
     res.sendFile(path.resolve('./views/shop.html'));
 });
 

@@ -6,7 +6,7 @@ const products = [
         price: 16495,
         countInStock: 1,
         category: "ring",
-        id: 1,
+        id: 100,
         purchased: 0,
     },
     {
@@ -16,7 +16,7 @@ const products = [
         price: 4550,
         countInStock: 6,
         category: "clock",
-        id: 2,
+        id: 200,
         purchased: 0,
     },
     {
@@ -26,7 +26,7 @@ const products = [
         price: 1645,
         countInStock: 4,
         category: "ring",
-        id: 112,
+        id: 1122,
         purchased: 0,
     },
     {
@@ -36,7 +36,7 @@ const products = [
         price: 350,
         countInStock: 4,
         category: "necklace",
-        id: 3,
+        id: 6663,
         purchased: 0,
     },
     {
@@ -46,7 +46,7 @@ const products = [
         price: 4250,
         countInStock: 4,
         category: "clock",
-        id: 1232,
+        id: 12321,
         purchased: 0,
     },
     {
@@ -56,7 +56,7 @@ const products = [
         price: 3520,
         countInStock: 1,
         category: "necklace",
-        id: 32,
+        id: 32311,
         purchased: 0,
     },
     {
@@ -66,7 +66,7 @@ const products = [
         price: 450,
         countInStock: 1,
         category: "clock",
-        id: 2441,
+        id: 2441552,
         purchased: 0,
     },
     {
@@ -76,7 +76,7 @@ const products = [
         price: 120,
         countInStock: 11,
         category: "brace",
-        id: 4,
+        id: 41141,
         purchased: 0,
     },
     {
@@ -86,7 +86,7 @@ const products = [
         price: 1330,
         countInStock: 9,
         category: "earrings",
-        id: 5,
+        id: 515673,
         purchased: 0,
     },
     {
@@ -96,7 +96,7 @@ const products = [
         price: 1330,
         countInStock: 9,
         category: "earrings",
-        id: 6,
+        id: 6415513,
         purchased: 0,
     },
     {
@@ -106,7 +106,7 @@ const products = [
         price: 180,
         countInStock: 6,
         category: "brace",
-        id: 41,
+        id: 4159,
         purchased: 0,
     },
 ];
