@@ -28,6 +28,10 @@ var productSchema = new mongoose.Schema({
     id:{
         type: Number,
         required: true
+    },
+    purchased:{
+        type: Number,
+        required: true
     }
 });
 

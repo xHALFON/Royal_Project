@@ -4,7 +4,6 @@ var flag = 1;
 var countincart = 0;
 var totalprice = 0;
 var str = "hUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ";
-
 // Make a request to the API endpoint using Axios
 axios.get('/api').then(response => {
     const arr = response.data;
@@ -63,9 +62,12 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button> 
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
         </center>`;
         }
     }else if(window.location.href.indexOf("shop_necklace") > -1){
@@ -81,9 +83,12 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button> 
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
         </center>`; 
         }
     }else if(window.location.href.indexOf("shop_brace") > -1){
@@ -99,9 +104,12 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>
         </center>`; 
         }
     }else if(window.location.href.indexOf("shop_clock") > -1){
@@ -117,9 +125,12 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button> 
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
         </center>`;
         }
     }else if(window.location.href.indexOf("shop_earrings") > -1){
@@ -135,9 +146,12 @@ function renderProducts() {
         img.src = product.imageUrl;
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button>  
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
         }
         }else{ // Prints all products
@@ -152,9 +166,12 @@ function renderProducts() {
         img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            product.countInStock = "Sold Out";
+        }
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center>
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}')" class="buy">Add to Cart</button>  
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
     }
     i++;
@@ -182,14 +199,28 @@ function linktoadd(){
     window.location.assign('/adminaddproducthUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
 }
 
-function addtocart(name, price, category, count, image, id){
+
+var ProductsCart = [];
+
+function addtocart(name, price, category, count, image, id, i){
+    if(products[i].countInStock <= 0){
+        var t = document.getElementById('cartmsg');
+        t.innerHTML = 'No Supply';
+        t.style.display = 'block';
+        return;
+    }
     if(countincart === 7){
         var t = document.getElementById('cartmsg');
         t.innerHTML = 'Cart Is Full';
         t.style.display = 'block';
         return;
     }else{
+        ProductsCart.push(id);
+        var t = document.getElementById('cartmsg');
+        console.log(products[i].countInStock);
+        products[i].countInStock -= 1;
         countincart += 1;
+        t.style.display = 'none';
         console.log(countincart);
     }
     var table = document.getElementById('cartTable');
@@ -253,3 +284,24 @@ function cartdis(){
         document.getElementById('toblur3').style.filter = 'blur(0px)';
     }
 }
+
+    async function buy() {
+        fetch('/purchase', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        })
+    }
+
+    async function prebuy() {
+        fetch('/prepurchase', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(ProductsCart)
+        })
+    }

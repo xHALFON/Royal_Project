@@ -106,7 +106,7 @@ span.price {
     <div class="inputrow" style="box-shadow: 2px 2px 16px 2px;">
         <div class="col-75">
           <div class="paymentcont">
-            <form action="/paymentreached" method="post">
+            <form>
             
               <div class="inputrow">
                 <div class="paymentsub">
@@ -153,7 +153,7 @@ span.price {
                 <i class="fa fa-cc-mastercard" style="color:red;"></i>
                 <i class="fa fa-cc-discover" style="color:orange;"></i>
               </div>
-              <input type="submit" value="Purchase" class="clickpay">
+              <a href="/paymentreached"><button type="button" onclick="buy()" class="clickpay">Purchase</button></a>
             </form>
           </div>
         </div>

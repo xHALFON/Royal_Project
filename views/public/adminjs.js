@@ -118,7 +118,7 @@ function renderProducts() {
         img.setAttribute('style','width: 175px;');
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p><p style="color: red;">ID: ${product.id}</p> `;
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}</b></p><p>Purchased: <b>${product.purchased}</b></p><p>${product.price}$</p><p style="color: red;">ID: ${product.id}</p> `;
     }
     i++;
 }

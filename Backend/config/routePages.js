@@ -33,6 +33,24 @@ router.post('/add', async function(req, res) {
       res.status(500).send('Server Error');
     }
   });
+
+//purchase
+var Passed_value = [];
+router.post('/prepurchase', async function(req,res) {
+    Passed_value = req.body;
+});
+
+router.post('/purchase', async function(req,res) {
+    console.log("Client Buy: " + Passed_value + " Product ID");
+        for(i = 0; i < Passed_value.length; i++){
+       await modelproduct.updateMany({ id: Passed_value[i] },
+        { $inc: { purchased: +1, countInStock: -1 } }
+        )
+    }
+
+});
+
+
   // remove product
   router.post('/remove', async function(req, res) {
     try {
@@ -49,7 +67,7 @@ router.post('/add', async function(req, res) {
     }
   });
   //payment paymentreached
-  router.post('/paymentreached', async function(req, res) {
+  router.get('/paymentreached', async function(req, res) {
     res.send(`<h1>Thank you for buying <a href='/'>Back to Royal</a></h1>`)
   });
 
@@ -57,6 +75,7 @@ router.post('/add', async function(req, res) {
 router.get('/', async function(req,res){
     res.sendFile(path.resolve('./views/index.html'));
 });
+
 
 router.get('/api', async function(req,res){ //gets products from db
     products = await modelproduct.find();
