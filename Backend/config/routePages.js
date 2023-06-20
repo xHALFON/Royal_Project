@@ -3,15 +3,41 @@ var router = express.Router();
 var path = require("path");
 var app = express();
 var products;
-//shop
-// var cors = require('cors');
-var modelproduct = require('../models/products');
+var products2;
+var EmptyArr = [];
 
-// adding product
+//require bodyparser for json format - important do not delete
+var modelproduct = require('../models/products');
 var bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
+
+//------------------shop------------------------
+// search product
+router.post('/api/search', async function(req, res) {
+  var query = req.body; // Get the search query from the request body
+  console.log(query.name);
+  console.log("A search has been executed.");
+
+  try {
+      products2 = await modelproduct.find({ name: { $regex: `${query.name}`, $options: 'i' } });
+      console.log(products2);
+      if (products2 == [])
+      {
+          res.json(EmptyArr);
+      }
+      else{
+      res.json(products2);
+      products2=[];
+      }
+  } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "An error occurred while performing the search." });
+  }
+});
+
+// adding product
 router.post('/add', async function(req, res) {
     try {
       var newProduct = new modelproduct({
@@ -67,16 +93,17 @@ router.post('/purchase', async function(req,res) {
       res.status(500).send('Server Error');
     }
   });
+
   //payment paymentreached
   router.get('/paymentreached', async function(req, res) {
     res.send(`<h1>Thank you for buying <a href='/'>Back to Royal</a></h1>`)
   });
 
+
 // routing
 router.get('/', async function(req,res){
     res.sendFile(path.resolve('./views/index.html'));
 });
-
 
 router.get('/api', async function(req,res){ //gets products from db
     products = await modelproduct.find();

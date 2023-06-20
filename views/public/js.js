@@ -3,6 +3,8 @@ const products = [];
 var flag = 1;
 var countincart = 0;
 var totalprice = 0;
+var products2 = [];
+var SearchStr=[];
 var str = "hUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ";
 // Make a request to the API endpoint using Axios
 axios.get('/api').then(response => {
@@ -311,23 +313,90 @@ function cartdis(){
     }
 }
 
-    async function buy() {
-        fetch('/purchase', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-        })
-    }
+async function buy() {
+    fetch('/purchase', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+    })
+}
 
-    async function prebuy() {
-        fetch('/prepurchase', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(ProductsCart)
-        })
-    }
+async function prebuy() {
+    fetch('/prepurchase', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(ProductsCart)
+    })
+}
+
+function searchProducts() {
+    SearchStr = document.getElementById("SearchTextBox").value;
+    /*searchTest();*/ 
+    axios.post('/api/search', {name: SearchStr}).then(response => {
+     products2 = response.data;
+    renderProducts2();
+    console.log(products2);
+      })
+      .catch(error => {
+        console.error(error);
+      }); 
+}
+
+// Save the products into the array
+function saveProducts2(data) {
+      products2.push(data.name);
+  }
+  
+  function renderProducts2()
+  {
+    var i=0;
+    console.log(i);
+    while (i < products2.length) {
+        const product = products2[i];
+        const productElement = document.getElementById('productList');
+        if (i==0)
+        {
+        while (productElement.firstChild) {
+            productElement.removeChild(productElement.firstChild);
+          }
+        }
+        var t = productElement.appendChild(document.createElement('div'));
+        t.setAttribute('class','product');
+        t.style.animation = "fadeIn 1.5s";
+        t.style.webkitAnimation = "fadeIn 1.5s";
+        var img = t.appendChild(document.createElement('img'));
+        img.setAttribute('style','width: 175px;  margin-left: 60px; float: left;');
+        img.src = product.imageUrl;
+        var s = t.appendChild(document.createElement('div'));
+        s.setAttribute('class','insideproduct');
+        if(product.countInStock == 0){
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }else{
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
+        i++;
+        }
+  }
+
+
+  async function searchTest() {
+    fetch('/api/search', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(`${SearchStr}`)
+    })
+}

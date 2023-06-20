@@ -28,10 +28,8 @@
         <center><p id="cartmsg" class="errorcartmsg"></p></center>
             <div class="container" id="toblur2">
                 <span class="leftcont">
-                    <form id="searchForm">
-                        <input class="searchproduct" type="search" name="searchField" placeholder="Search Product">
-                        <input class="searchbtn" type="submit" value="Search" onclick="show()"><br><br>
-                    </form>
+                        <input id="SearchTextBox" class="searchproduct" type="search" placeholder="Search Product">
+                        <button class="searchbtn" type="button" onclick="searchProducts()">Search</button><br><br>
                         <i class="fa fa-calendar"></i> <u><b>Category:</b></u><br>
                         <button type="button" class="categoryleft" onclick="renderProducts()">All Products</button><br>
                         <button type="button" class="categoryleft" onclick="renderProducts('ring')">Rings</button><br>

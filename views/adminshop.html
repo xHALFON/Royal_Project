@@ -26,15 +26,13 @@
 
             <form action="/remove" style="display: inline;" method="post" role="form">
             <button type="submit" style="display: inline;" class="buy">Remove Product</button>
-            <input class="inputlog"style="display: inline; width: 60px;" name="id" type="number" placeholder="ID"></input><br>
+            <input class="inputlog"style="display: inline; width: 80px;" name="id" type="number" placeholder="ID"></input><br>
             </form>
         </center>
             <div class="container">
                 <span class="leftcont">
-                    <form id="searchForm">
-                        <input class="searchproduct" type="search" name="searchField" placeholder="Search Product">
-                        <input class="searchbtn" type="submit" value="Search" onclick="show()"><br><br>
-                    </form>
+                    <input id="SearchTextBox" class="searchproduct" type="search" placeholder="Search Product">
+                    <button class="searchbtn" type="button" onclick="searchProducts()">Search</button><br><br>
                         <i class="fa fa-calendar"></i> <u><b>Category:</b></u><br>
                         <a class="categoryleft" href="#">All Products</a><br>
                         <a class="categoryleft" href="#">Rings</a><br>

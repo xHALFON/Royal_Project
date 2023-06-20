@@ -1,5 +1,7 @@
 const productListElement = document.getElementById('productList');
 const products = [];
+var products2 = [];
+var SearchStr=[];
 var str = "hUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ";
 
 // Make a request to the API endpoint using Axios
@@ -234,3 +236,56 @@ function ShowGraph(){
     });    
 }
 
+function searchProducts() {
+    SearchStr = document.getElementById("SearchTextBox").value;
+    /*searchTest();*/ 
+    axios.post('/api/search', {name: SearchStr}).then(response => {
+     products2 = response.data;
+    renderProducts2();
+    console.log(products2);
+      })
+      .catch(error => {
+        console.error(error);
+      }); 
+}
+
+// Save the products into the array
+function saveProducts2(data) {
+      products2.push(data.name);
+  }
+  
+  function renderProducts2()
+  {
+    var i=0;
+    console.log(i);
+    while (i < products2.length) {
+        const product = products2[i];
+        const productElement = document.getElementById('productList');
+        if (i==0)
+        {
+        while (productElement.firstChild) {
+            productElement.removeChild(productElement.firstChild);
+          }
+        }
+        var t = productElement.appendChild(document.createElement('div'));
+        t.setAttribute('class','product');
+        var img = t.appendChild(document.createElement('img'));
+        img.src = product.imageUrl;
+        img.setAttribute('style','width: 175px;');
+        var s = t.appendChild(document.createElement('div'));
+        s.setAttribute('class','insideproduct');
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}</b></p><p>Purchased: <b>${product.purchased}</b></p><p>${product.price}$</p><p style="color: red;">ID: ${product.id}</p> `;
+        i++;
+        }
+}
+
+  async function searchTest() {
+    fetch('/api/search', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(`${SearchStr}`)
+    })
+}
