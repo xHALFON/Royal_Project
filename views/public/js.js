@@ -63,12 +63,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
+        }else{
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
         }
     }else if(window.location.href.indexOf("shop_necklace") > -1){
         const product = products[i];
@@ -84,12 +88,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }else{
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
-        </center>`; 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
         }
     }else if(window.location.href.indexOf("shop_brace") > -1){
         const product = products[i];
@@ -105,12 +113,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }else{
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>
-        </center>`; 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
         }
     }else if(window.location.href.indexOf("shop_clock") > -1){
         const product = products[i];
@@ -126,12 +138,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button> 
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
+        }else{
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
         }
     }else if(window.location.href.indexOf("shop_earrings") > -1){
         const product = products[i];
@@ -147,12 +163,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
-        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
-        <center> 
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
         <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
+        }else{
+        s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }
         }
         }else{ // Prints all products
         const product = products[i];
@@ -167,12 +187,16 @@ function renderProducts() {
         var s = t.appendChild(document.createElement('div'));
         s.setAttribute('class','insideproduct');
         if(product.countInStock == 0){
-            product.countInStock = "Sold Out";
-        }
+            s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
+        <center>
+        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        </center>`;
+        }else{
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center>
         <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
+        }
     }
     i++;
 }
