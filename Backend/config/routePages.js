@@ -66,6 +66,19 @@ var Passed_value = [];
 router.post('/prepurchase', async function(req,res) {
     Passed_value = req.body;
 });
+// delete all products
+router.post('/deleteall', async function(req,res) {
+  try {
+
+  await modelproduct.deleteMany();
+  console.log("All Products deleted.");
+  
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Server Error');
+  }
+});
 
 router.post('/purchase', async function(req,res) {
     console.log("Client Buy: " + Passed_value + " Product ID");
@@ -88,6 +101,7 @@ router.post('/purchase', async function(req,res) {
       console.log('Product removed from the database');
       }
       res.redirect('/adminshophUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
+      
     } catch (error) {
       console.error(error);
       res.status(500).send('Server Error');

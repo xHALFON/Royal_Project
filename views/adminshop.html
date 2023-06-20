@@ -21,8 +21,14 @@
         </nav>
     </header>
     <section>
-        <center>Admin Shop<br><br>
+        <center><div id="msg"><b>Admin Shop<br><br></b></div>
             <button type="submit" style="display: inline;" onclick="linktoadd()" class="buy">Add Product</button>
+            <span id="suremsg" style="display: none;"><b>are u sure?</b>
+                <button style="display: none;" type="submit" id="yes" style="display: inline;" onclick="linktoremove()" class="buy">Yes</button>
+                <button style="display: none;" type="submit" id="no" style="display: inline;" onclick="no()" class="buy">No</button>
+            </span>
+
+            <button type="submit" id="linkremove" style="display: inline;" onclick="sure()" class="buy">Remove All Products</button>
 
             <form action="/remove" style="display: inline;" method="post" role="form">
             <button type="submit" style="display: inline;" class="buy">Remove Product</button>

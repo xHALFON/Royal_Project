@@ -143,6 +143,29 @@ function log(){
 function linktoadd(){
     window.location.assign('/adminaddproducthUKEwi5irXX48T_AhXiVaQEHYaqDy8Q4dUDCAk&uact=5&oq=dsa&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgsILhCvARDHARCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgsIABCABBAKEAEQKjoLCC4QgAQQxwEQ0QNQAFhqYLsCaABwAHgAgAGfAYgBzAOSAQMwLjOYAQ');
 }
+function sure(){
+    document.getElementById('yes').style.display = "inline";
+    document.getElementById('no').style.display = "inline";
+    document.getElementById('linkremove').style.display = "none";
+    document.getElementById('suremsg').style.display = "inline";
+}
+
+function no(){
+    document.getElementById('yes').style.display = "none";
+    document.getElementById('no').style.display = "none";
+    document.getElementById('linkremove').style.display = "inline";
+    document.getElementById('suremsg').style.display = "none";
+}
+
+function linktoremove(){
+    axios.post('/deleteall').then(response => {
+    })
+    .catch(error => {
+    console.error(error);
+    }); 
+    document.getElementById('msg').innerHTML = "All Products deleted, Refresh Page";
+    alert('All Products Deleted, Please Refresh Page');
+}
 
 function ShowGraph(){
     var purchasering = 0;
