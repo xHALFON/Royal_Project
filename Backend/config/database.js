@@ -2,7 +2,7 @@ require("dotenv").config();
 var mongoose = require("mongoose");
 const connectDB = async() =>{
     try{
-        mongoose.connect("mongodb://127.0.0.1:27017/RoyalDB");
+        mongoose.connect("mongodb+srv://guyhalfon98:123123Guy@royaldb.dib6sav.mongodb.net/?retryWrites=true&w=majority");
         var db = mongoose.connection;
         db.on('error', console.error.bind(console, 'Cannot connect db'));
         db.once('open', function(){
