@@ -112,7 +112,9 @@ header nav a.log{
   
 .insideproduct {
     text-align: left;
-    padding: 2px 16px;
+    display: block;
+    padding-left: 15px;
+    font-size: 14px;
 }
 .buy {
   display: flex;
