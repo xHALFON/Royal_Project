@@ -1,7 +1,7 @@
 require('dotenv').config();
 var express = require("express");
 var path = require("path");
-var connectDB = require("./backend/config/database");
+var connectDB = require("./Backend/config/database");
 
 // connect to db
 connectDB();
@@ -16,7 +16,7 @@ app.set("view engine", "ejs");
 // Set folders
 app.use(express.static(__dirname + '/views/public'));
 // Set Routers
-var pages = require('./backend/config/routePages');
+var pages = require('./Backend/config/routePages');
 app.use('/', pages);
 // Start Server
 const port = 3300;
