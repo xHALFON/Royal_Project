@@ -287,10 +287,104 @@ function addtocart(name, price, category, count, image, id, i){
     var a = tr.appendChild(td).appendChild(document.createElement('img'));
     a.src = image;
     a.style.width = "50px";
-    td.style.border = "none";
     td.style.paddingRight = "0px;"
-    td.style.width = '0';
+    td.style.width = '50px';
     td.style.textAlign = 'center';
+    td = document.createElement('td');
+    var btn = tr.appendChild(td).appendChild(document.createElement("BUTTON"));
+    td.style.width = '30px';
+    td.style.textAlign = 'center';
+    td.style.border = "none";
+    btn.innerHTML = "Remove";
+    btn.setAttribute('class', 'buy');
+    btn.addEventListener('click',function(){
+        var x = this.parentElement;
+        x.parentElement.remove();
+        countincart--;
+        totalprice -= price;
+        document.getElementById('price').innerHTML = 'Total: ' + totalprice + '$';
+        var t = ProductsCart.findIndex(function(id1){return id1==id});
+        ProductsCart.splice(t,1);
+        products[i].countInStock += 1;
+    });
+}
+function addtocartbysearch(name, price, category, count, image, id, i){
+    if(products2[i].countInStock <= 0){
+        var t = document.getElementById('cartmsg');
+        t.innerHTML = 'No Supply';
+        t.style.display = 'block';
+        return;
+    }
+    if(countincart === 7){
+        var t = document.getElementById('cartmsg');
+        t.innerHTML = 'Cart Is Full';
+        t.style.display = 'block';
+        return;
+    }else{
+        ProductsCart.push(id);
+        var t = document.getElementById('cartmsg');
+        console.log(products2[i].countInStock);
+        products2[i].countInStock -= 1;
+        countincart += 1;
+        t.style.display = 'none';
+        console.log(countincart);
+    }
+    var table = document.getElementById('cartTable');
+    var tr = document.createElement('tr');
+    if(flag == 1){
+        tr.style.backgroundColor = "bisque";
+        flag = 1 - flag;
+    }else{
+        flag = 1 - flag;
+        tr.style.backgroundColor = "white";
+    }
+    totalprice = totalprice + Number(price);
+    document.getElementById('price').innerHTML = 'Total: ' + totalprice + '$';
+    table.appendChild(tr);
+    var td = document.createElement('td');
+    tr.appendChild(td).innerHTML = name;
+    td.style.width = '56px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    tr.appendChild(td).innerHTML = price+'$';
+    td.style.width = '50px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    tr.appendChild(td).innerHTML = category;
+    td.style.width = '90px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    tr.appendChild(td).innerHTML = count;
+    td.style.width = '128px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    tr.appendChild(td).innerHTML = id;
+    td.style.width = '100px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    var a = tr.appendChild(td).appendChild(document.createElement('img'));
+    a.src = image;
+    a.style.width = "50px";
+    td.style.paddingRight = "0px;"
+    td.style.width = '50px';
+    td.style.textAlign = 'center';
+    td = document.createElement('td');
+    var btn = tr.appendChild(td).appendChild(document.createElement("BUTTON"));
+    td.style.width = '30px';
+    td.style.textAlign = 'center';
+    td.style.border = "none";
+    btn.innerHTML = "Remove";
+    btn.setAttribute('class', 'buy');
+    btn.addEventListener('click',function(){
+        var x = this.parentElement;
+        x.parentElement.remove();
+        countincart--;
+        totalprice -= price;
+        document.getElementById('price').innerHTML = 'Total: ' + totalprice + '$';
+        var t = ProductsCart.findIndex(function(id1){return id1==id});
+        ProductsCart.splice(t,1);
+        products2[i].countInStock += 1;
+    });
 }
 
 var cartDisplay = 0;
@@ -377,12 +471,12 @@ function saveProducts2(data) {
         if(product.countInStock == 0){
             s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b style="color: red;"> Sold Out </b></p><p><b>${product.price}$ </b></p> 
         <center>
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        <button type="button" onclick="addtocartbysearch('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
         }else{
         s.innerHTML = `<h4><b>${product.name}</b></h4><p>In Stock: <b>${product.countInStock}<b></p><p>${product.price}$</p> 
         <center>
-        <button type="button" onclick="addtocart('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
+        <button type="button" onclick="addtocartbysearch('${product.name}', '${product.price}', '${product.category}', '${product.countInStock}', '${product.imageUrl}','${product.id}', '${i}')" class="buy">Add to Cart</button>  
         </center>`;
         }
         i++;
@@ -399,4 +493,8 @@ function saveProducts2(data) {
         },
         body: JSON.stringify(`${SearchStr}`)
     })
+}
+function closepopup(){
+    var x = document.getElementById("popupcont");
+    x.style.display = "none";
 }

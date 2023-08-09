@@ -1,7 +1,7 @@
 const products = [
     {
         name: "Gold Pendant Initial Letter G",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter G.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter G.png",
         description: "Gold Pendant Initial Letter G",
         price: 129,
         countInStock: 17,
@@ -11,7 +11,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 6",
-        imageUrl: "./resources/products/Silver Spinning Ring 6.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 6.png",
         description: "Silver Spinning Ring 6",
         price: 55,
         countInStock: 15,
@@ -21,7 +21,7 @@ const products = [
     },
     {
         name: "Gothic Silver Crystal Earrings",
-        imageUrl: "./resources/products/Gothic Silver Crystal Zircon Earrings.png",
+        imageUrl: "./resources/Products/Gothic Silver Crystal Zircon Earrings.png",
         description: "Gothic Silver Crystal Zircon Earrings",
         price: 13,
         countInStock: 18,
@@ -31,7 +31,7 @@ const products = [
     },
     {
         name: "Emporio Armani Blue",
-        imageUrl: "./resources/products/EMPORIO ARMANI AR2448 BLUE DIAL STAINLESS STEEL.png",
+        imageUrl: "./resources/Products/EMPORIO ARMANI AR2448 BLUE DIAL STAINLESS STEEL.png",
         description: "EMPORIO ARMANI AR2448 BLUE",
         price: 449,
         countInStock: 11,
@@ -41,7 +41,7 @@ const products = [
     },
     {
         name: "Gothic Silver Eye Earrings",
-        imageUrl: "./resources/products/Gothic Silver Eye Zircon Earrings.png",
+        imageUrl: "./resources/Products/Gothic Silver Eye Zircon Earrings.png",
         description: "Gothic Silver Eye Zircon Earrings",
         price: 9,
         countInStock: 10,
@@ -51,7 +51,7 @@ const products = [
     },
     {
         name: "Green Diamond Woman Bracelet",
-        imageUrl: "./resources/products/Green Diamond Woman Bracelet.png",
+        imageUrl: "./resources/Products/Green Diamond Woman Bracelet.png",
         description: "Green Diamond Woman Bracelet",
         price: 799,
         countInStock: 2,
@@ -61,7 +61,7 @@ const products = [
     },
     {
         name: "Men's Silver Curb",
-        imageUrl: "./resources/products/Men's Silver Curb.png",
+        imageUrl: "./resources/Products/Men's Silver Curb.png",
         description: "Men's Silver Curb",
         price: 113,
         countInStock: 5,
@@ -71,7 +71,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 4",
-        imageUrl: "./resources/products/Silver Spinning Ring 4.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 4.png",
         description: "Silver Spinning Ring 4",
         price: 55,
         countInStock: 15,
@@ -81,7 +81,7 @@ const products = [
     },
     {
         name: "18K Gold Rolex Diamond",
-        imageUrl: "./resources/products/18K Yellow Gold Mens Rolex Presidential Prong Diamond.png",
+        imageUrl: "./resources/Products/18K Yellow Gold Mens Rolex Presidential Prong Diamond.png",
         description: "18K Yellow Gold Mens Rolex Presidential Prong Diamond",
         price: 67959,
         countInStock: 2,
@@ -91,7 +91,7 @@ const products = [
     },
     {
         name: "Silver Bracelet Cute Charm",
-        imageUrl: "./resources/products/Silver Bangle Bracelet Cute Charm.png",
+        imageUrl: "./resources/Products/Silver Bangle Bracelet Cute Charm.png",
         description: "Silver Bangle Bracelet Cute Charm",
         price: 39,
         countInStock: 4,
@@ -101,7 +101,7 @@ const products = [
     },
     {
         name: "Black Titanium Ring",
-        imageUrl: "./resources/products/Black Titanium Ring.png",
+        imageUrl: "./resources/Products/Black Titanium Ring.png",
         description: "Black Titanium Ring",
         price: 49,
         countInStock: 14,
@@ -111,7 +111,7 @@ const products = [
     },
     {
         name: "One Red Round Gemstone",
-        imageUrl: "./resources/products/One Red Round Gemstone.png",
+        imageUrl: "./resources/Products/One Red Round Gemstone.png",
         description: "One Red Round Gemstone",
         price: 9,
         countInStock: 23,
@@ -121,7 +121,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter I",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter I.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter I.png",
         description: "Gold Pendant Initial Letter I",
         price: 129,
         countInStock: 12,
@@ -131,7 +131,7 @@ const products = [
     },
     {
         name: "Gold Greek Ring",
-        imageUrl: "./resources/products/Gold Greek Ring.png",
+        imageUrl: "./resources/Products/Gold Greek Ring.png",
         description: "Gold Greek Ring",
         price: 226,
         countInStock: 8,
@@ -141,7 +141,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 3",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 3.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 3.png",
         description: "Gold Plated Hoop Earrings Fashion 3",
         price: 25,
         countInStock: 13,
@@ -151,7 +151,7 @@ const products = [
     },
     {
         name: "Green Silver Rolex Watch",
-        imageUrl: "./resources/products/GreenRolex.png",
+        imageUrl: "./resources/Products/GreenRolex.png",
         description: "GreenRolex",
         price: 6599,
         countInStock: 6,
@@ -161,7 +161,7 @@ const products = [
     },
     {
         name: "Round Gemstone Gladiator 1",
-        imageUrl: "./resources/products/Round Gemstone Gladiator 1.png",
+        imageUrl: "./resources/Products/Round Gemstone Gladiator 1.png",
         description: "Round Gemstone Gladiator 1",
         price: 12,
         countInStock: 14,
@@ -171,7 +171,7 @@ const products = [
     },
     {
         name: "Gold Women Flowers Rings",
-        imageUrl: "./resources/products/Gold Women Flowers Rings.png",
+        imageUrl: "./resources/Products/Gold Women Flowers Rings.png",
         description: "Gold Women Flowers Rings",
         price: 430,
         countInStock: 8,
@@ -181,7 +181,7 @@ const products = [
     },
     {
         name: "Silver Retro Heavy Hand Fist",
-        imageUrl: "./resources/products/Silver Retro Heavy Hand Fist.png",
+        imageUrl: "./resources/Products/Silver Retro Heavy Hand Fist.png",
         description: "Silver Retro Heavy Hand Fist",
         price: 28,
         countInStock: 7,
@@ -191,7 +191,7 @@ const products = [
     },
     {
         name: "Classic Titanium Ring",
-        imageUrl: "./resources/products/Classic Titanium Ring.png",
+        imageUrl: "./resources/Products/Classic Titanium Ring.png",
         description: "Classic Titanium Ring",
         price: 57,
         countInStock: 19,
@@ -201,7 +201,7 @@ const products = [
     },
     {
         name: "Rolex Datejust 2Tone Gold",
-        imageUrl: "./resources/products/Rolex Datejust Mens 2Tone Gold.png",
+        imageUrl: "./resources/Products/Rolex Datejust Mens 2Tone Gold.png",
         description: "Rolex Datejust Mens 2Tone Gold",
         price: 4950,
         countInStock: 6,
@@ -211,7 +211,7 @@ const products = [
     },
     {
         name: "Gold Poker Men Titanium Ring",
-        imageUrl: "./resources/products/Gold Poker Men Titanium Ring.png",
+        imageUrl: "./resources/Products/Gold Poker Men Titanium Ring.png",
         description: "Gold Poker Men Titanium Ring",
         price: 58,
         countInStock: 5,
@@ -221,7 +221,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 5",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 5.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 5.png",
         description: "Gold Plated Hoop Earrings Fashion 5",
         price: 25,
         countInStock: 13,
@@ -231,7 +231,7 @@ const products = [
     },
     {
         name: "Seiko Gold Plated Japanese",
-        imageUrl: "./resources/products/Seiko Gold Plated Japanese.png",
+        imageUrl: "./resources/Products/Seiko Gold Plated Japanese.png",
         description: "Seiko Gold Plated Japanese",
         price: 1899,
         countInStock: 14,
@@ -241,7 +241,7 @@ const products = [
     },
     {
         name: "Magnetic Heart black and silver",
-        imageUrl: "./resources/products/Magnetic Heart black and silver.png",
+        imageUrl: "./resources/Products/Magnetic Heart black and silver.png",
         description: "Magnetic Heart black and silver",
         price: 69,
         countInStock: 3,
@@ -251,7 +251,7 @@ const products = [
     },
     {
         name: "Seiko Kinetic Green Brown",
-        imageUrl: "./resources/products/Seiko Kinetic Green Dial Brown.png",
+        imageUrl: "./resources/Products/Seiko Kinetic Green Dial Brown.png",
         description: "Seiko Kinetic Green Dial Brown",
         price: 1499,
         countInStock: 12,
@@ -261,7 +261,7 @@ const products = [
     },
     {
         name: "Four Leaf Clover Heart Cubic",
-        imageUrl: "./resources/products/Four Leaf Clover Heart Cubic.png",
+        imageUrl: "./resources/Products/Four Leaf Clover Heart Cubic.png",
         description: "Four Leaf Clover Heart Cubic",
         price: 269,
         countInStock: 13,
@@ -271,7 +271,7 @@ const products = [
     },
     {
         name: "Gold Line Ring",
-        imageUrl: "./resources/products/Gold Line Ring.png",
+        imageUrl: "./resources/Products/Gold Line Ring.png",
         description: "Gold Line Ring",
         price: 69,
         countInStock: 17,
@@ -281,7 +281,7 @@ const products = [
     },
     {
         name: "Black Mesh Belt Ultra thin",
-        imageUrl: "./resources/products/Watch Mesh Belt Business Ultra Thin.png",
+        imageUrl: "./resources/Products/Watch Mesh Belt Business Ultra Thin.png",
         description: "Watch Mesh Belt Business Ultra Thin",
         price: 239,
         countInStock: 13,
@@ -291,7 +291,7 @@ const products = [
     },
     {
         name: "Green Diamond Silver Ring",
-        imageUrl: "./resources/products/Green White Diamond Silver Ring.png",
+        imageUrl: "./resources/Products/Green White Diamond Silver Ring.png",
         description: "Green White Diamond Silver Ring",
         price: 1040,
         countInStock: 6,
@@ -301,7 +301,7 @@ const products = [
     },
     {
         name: "Gold Crystal Cross Chain",
-        imageUrl: "./resources/products/Gold Crystal Cross Chain.png",
+        imageUrl: "./resources/Products/Gold Crystal Cross Chain.png",
         description: "Gold Crystal Cross Chain",
         price: 330,
         countInStock: 6,
@@ -311,7 +311,7 @@ const products = [
     },
     {
         name: "Black Poker Men Titanium Ring",
-        imageUrl: "./resources/products/Black Poker Men Titanium Ring.png",
+        imageUrl: "./resources/Products/Black Poker Men Titanium Ring.png",
         description: "Black Poker Men Titanium Ring",
         price: 48,
         countInStock: 11,
@@ -321,7 +321,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter D",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter D.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter D.png",
         description: "Gold Pendant Initial Letter D",
         price: 129,
         countInStock: 9,
@@ -331,7 +331,7 @@ const products = [
     },
     {
         name: "Silver Fashion Cubic Zircon",
-        imageUrl: "./resources/products/Silver Plated Fashion Cubic Zircon.png",
+        imageUrl: "./resources/Products/Silver Plated Fashion Cubic Zircon.png",
         description: "Silver Plated Fashion Cubic Zircon",
         price: 119,
         countInStock: 3,
@@ -341,7 +341,7 @@ const products = [
     },
     {
         name: "8mm Round Gemstone Owl 3",
-        imageUrl: "./resources/products/8mm Round Gemstone Owl 3.png",
+        imageUrl: "./resources/Products/8mm Round Gemstone Owl 3.png",
         description: "8mm Round Gemstone Owl 3",
         price: 13,
         countInStock: 16,
@@ -351,7 +351,7 @@ const products = [
     },
     {
         name: "Oyster Pearl Locket Cage 2",
-        imageUrl: "./resources/products/Oyster Pearl Locket Cage 2.png",
+        imageUrl: "./resources/Products/Oyster Pearl Locket Cage 2.png",
         description: "Oyster Pearl Locket Cage 2",
         price: 33,
         countInStock: 19,
@@ -361,7 +361,7 @@ const products = [
     },
     {
         name: "8mm Round Gemstone Lion 1",
-        imageUrl: "./resources/products/8mm Round Gemstone_Lion 1.png",
+        imageUrl: "./resources/Products/8mm Round Gemstone_Lion 1.png",
         description: "8mm Round Gemstone_Lion 1",
         price: 14,
         countInStock: 12,
@@ -371,7 +371,7 @@ const products = [
     },
     {
         name: "Round Gemstone Gladiator 2",
-        imageUrl: "./resources/products/Round Gemstone Gladiator 2.png",
+        imageUrl: "./resources/Products/Round Gemstone Gladiator 2.png",
         description: "Round Gemstone Gladiator 2",
         price: 12,
         countInStock: 14,
@@ -381,7 +381,7 @@ const products = [
     },
     {
         name: "Oyster Pearl Locket Cage 4",
-        imageUrl: "./resources/products/Oyster Pearl Locket Cage 4.png",
+        imageUrl: "./resources/Products/Oyster Pearl Locket Cage 4.png",
         description: "Oyster Pearl Locket Cage 4",
         price: 33,
         countInStock: 12,
@@ -391,7 +391,7 @@ const products = [
     },
     {
         name: "India Round Gemstone",
-        imageUrl: "./resources/products/India Round Gemstone.png",
+        imageUrl: "./resources/Products/India Round Gemstone.png",
         description: "India Round Gemstone",
         price: 7,
         countInStock: 22,
@@ -401,7 +401,7 @@ const products = [
     },
     {
         name: "Oyster Pearl Locket Cage 3",
-        imageUrl: "./resources/products/Oyster Pearl Locket Cage 3.png",
+        imageUrl: "./resources/Products/Oyster Pearl Locket Cage 3.png",
         description: "Oyster Pearl Locket Cage 3",
         price: 33,
         countInStock: 15,
@@ -411,7 +411,7 @@ const products = [
     },
     {
         name: "Silver Water Drop Earrings",
-        imageUrl: "./resources/products/Silver Water Drop Earrings.png",
+        imageUrl: "./resources/Products/Silver Water Drop Earrings.png",
         description: "Silver Water Drop Earrings",
         price: 35,
         countInStock: 8,
@@ -421,7 +421,7 @@ const products = [
     },
     {
         name: "Aquamarine Diamond Ring",
-        imageUrl: "./resources/products/Aquamarine Diamond Ring.png",
+        imageUrl: "./resources/Products/Aquamarine Diamond Ring.png",
         description: "Aquamarine Diamond Ring",
         price: 8389,
         countInStock: 2,
@@ -431,7 +431,7 @@ const products = [
     },
     {
         name: "Garmin Digital black",
-        imageUrl: "./resources/products/Garmin Digital black.png",
+        imageUrl: "./resources/Products/Garmin Digital black.png",
         description: "Garmin Digital black",
         price: 39,
         countInStock: 27,
@@ -441,7 +441,7 @@ const products = [
     },
     {
         name: "Blue and Black Titanium Ring",
-        imageUrl: "./resources/products/Blue and Black Titanium Ring.png",
+        imageUrl: "./resources/Products/Blue and Black Titanium Ring.png",
         description: "Blue and Black Titanium Ring",
         price: 55,
         countInStock: 11,
@@ -451,7 +451,7 @@ const products = [
     },
     {
         name: "Gold Plated Titanium Ring",
-        imageUrl: "./resources/products/Gold Plated Titanium Ring.png",
+        imageUrl: "./resources/Products/Gold Plated Titanium Ring.png",
         description: "Gold Plated Titanium Ring",
         price: 129,
         countInStock: 14,
@@ -461,7 +461,7 @@ const products = [
     },
     {
         name: "Bronze Heart Earring",
-        imageUrl: "./resources/products/Bronze Heart Earring.png",
+        imageUrl: "./resources/Products/Bronze Heart Earring.png",
         description: "Bronze Heart Earring",
         price: 25,
         countInStock: 13,
@@ -471,7 +471,7 @@ const products = [
     },
     {
         name: "Ice White Diamond Ring",
-        imageUrl: "./resources/products/Ice White Diamond Ring.png",
+        imageUrl: "./resources/Products/Ice White Diamond Ring.png",
         description: "Ice White Diamond Ring",
         price: 2399,
         countInStock: 3,
@@ -481,7 +481,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter E",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter E.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter E.png",
         description: "Gold Pendant Initial Letter E",
         price: 129,
         countInStock: 22,
@@ -491,7 +491,7 @@ const products = [
     },
     {
         name: "Night Blue Line Ring",
-        imageUrl: "./resources/products/Night Blue Line Ring.png",
+        imageUrl: "./resources/Products/Night Blue Line Ring.png",
         description: "Night Blue Line Ring",
         price: 69,
         countInStock: 13,
@@ -501,7 +501,7 @@ const products = [
     },
     {
         name: "One Green Round Gemstone",
-        imageUrl: "./resources/products/One Green Round Gemstone.png",
+        imageUrl: "./resources/Products/One Green Round Gemstone.png",
         description: "One Green Round Gemstone",
         price: 9,
         countInStock: 23,
@@ -511,7 +511,7 @@ const products = [
     },
     {
         name: "Silver Plated Rings Black and Red",
-        imageUrl: "./resources/products/Silver Plated Rings Black and Red.png",
+        imageUrl: "./resources/Products/Silver Plated Rings Black and Red.png",
         description: "Silver Plated Rings Black and Red",
         price: 249,
         countInStock: 4,
@@ -521,7 +521,7 @@ const products = [
     },
     {
         name: "Gant Freeport gold black",
-        imageUrl: "./resources/products/Gant Freeport gold black.png",
+        imageUrl: "./resources/Products/Gant Freeport gold black.png",
         description: "Gant Freeport gold black",
         price: 299,
         countInStock: 18,
@@ -531,7 +531,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 1",
-        imageUrl: "./resources/products/Silver Spinning Ring 1.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 1.png",
         description: "Silver Spinning Ring 1",
         price: 55,
         countInStock: 15,
@@ -541,7 +541,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter A",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter A.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter A.png",
         description: "Gold Pendant Initial Letter A",
         price: 129,
         countInStock: 14,
@@ -551,7 +551,7 @@ const products = [
     },
     {
         name: "One Blue Round Gemstone",
-        imageUrl: "./resources/products/One Blue Round Gemstone.png",
+        imageUrl: "./resources/Products/One Blue Round Gemstone.png",
         description: "One Blue Round Gemstone",
         price: 9,
         countInStock: 23,
@@ -561,7 +561,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 2",
-        imageUrl: "./resources/products/Silver Spinning Ring 2.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 2.png",
         description: "Silver Spinning Ring 2",
         price: 55,
         countInStock: 15,
@@ -571,7 +571,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 3",
-        imageUrl: "./resources/products/Silver Spinning Ring 3.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 3.png",
         description: "Silver Spinning Ring 3",
         price: 55,
         countInStock: 15,
@@ -581,7 +581,7 @@ const products = [
     },
     {
         name: "ROLEX Stainless Steel",
-        imageUrl: "./resources/products/ROLEX Stainless Steel 44mm.png",
+        imageUrl: "./resources/Products/ROLEX Stainless Steel 44mm.png",
         description: "ROLEX Stainless Steel 44mm",
         price: 1399,
         countInStock: 21,
@@ -591,7 +591,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 5",
-        imageUrl: "./resources/products/Silver Spinning Ring 5.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 5.png",
         description: "Silver Spinning Ring 5",
         price: 55,
         countInStock: 15,
@@ -601,7 +601,7 @@ const products = [
     },
     {
         name: "8mm Round Gemstone Lion 2",
-        imageUrl: "./resources/products/8mm Round Gemstone Lion 2.png",
+        imageUrl: "./resources/Products/8mm Round Gemstone Lion 2.png",
         description: "8mm Round Gemstone Lion 2",
         price: 14,
         countInStock: 21,
@@ -611,7 +611,7 @@ const products = [
     },
     {
         name: "8mm Round Gemstone Owl 1",
-        imageUrl: "./resources/products/8mm Round Gemstone Owl 1.png",
+        imageUrl: "./resources/Products/8mm Round Gemstone Owl 1.png",
         description: "8mm Round Gemstone Owl 1",
         price: 12,
         countInStock: 11,
@@ -621,7 +621,7 @@ const products = [
     },
     {
         name: "Purple Titanium Ring",
-        imageUrl: "./resources/products/Purple Titanium Ring.png",
+        imageUrl: "./resources/Products/Purple Titanium Ring.png",
         description: "Purple Titanium Ring",
         price: 54,
         countInStock: 17,
@@ -631,7 +631,7 @@ const products = [
     },
     {
         name: "8mm Round Gemstone Owl 2",
-        imageUrl: "./resources/products/8mm Round Gemstone Owl 2.png",
+        imageUrl: "./resources/Products/8mm Round Gemstone Owl 2.png",
         description: "8mm Round Gemstone Owl 2",
         price: 13,
         countInStock: 16,
@@ -641,7 +641,7 @@ const products = [
     },
     {
         name: "Golden Heart Pendant",
-        imageUrl: "./resources/products/Golden Heart Pendant.png",
+        imageUrl: "./resources/Products/Golden Heart Pendant.png",
         description: "Golden Heart Pendant",
         price: 169,
         countInStock: 4,
@@ -651,7 +651,7 @@ const products = [
     },
     {
         name: "Bronze Women Flowers Rings",
-        imageUrl: "./resources/products/Bronze Women Flowers Rings.png",
+        imageUrl: "./resources/Products/Bronze Women Flowers Rings.png",
         description: "Bronze Women Flowers Rings",
         price: 330,
         countInStock: 7,
@@ -661,7 +661,7 @@ const products = [
     },
     {
         name: "Blue 8mm Round Gemstone",
-        imageUrl: "./resources/products/Blue 8mm Round Gemstone.png",
+        imageUrl: "./resources/Products/Blue 8mm Round Gemstone.png",
         description: "Blue 8mm Round Gemstone",
         price: 8,
         countInStock: 12,
@@ -671,7 +671,7 @@ const products = [
     },
     {
         name: "Night Blue Titanium Ring",
-        imageUrl: "./resources/products/Night Blue Titanium Ring.png",
+        imageUrl: "./resources/Products/Night Blue Titanium Ring.png",
         description: "Night Blue Titanium Ring",
         price: 122,
         countInStock: 7,
@@ -681,7 +681,7 @@ const products = [
     },
     {
         name: "Blue Carbon Titan bracelet",
-        imageUrl: "./resources/products/Blue Carbon Titan bracelet.png",
+        imageUrl: "./resources/Products/Blue Carbon Titan bracelet.png",
         description: "Blue Carbon Titan bracelet",
         price: 19,
         countInStock: 5,
@@ -691,7 +691,7 @@ const products = [
     },
     {
         name: "Invicta Pro Diver Black",
-        imageUrl: "./resources/products/Invicta Pro Diver Automatic Black Dial.png",
+        imageUrl: "./resources/Products/Invicta Pro Diver Automatic Black Dial.png",
         description: "Invicta Pro Diver Automatic Black Dial",
         price: 399,
         countInStock: 14,
@@ -701,7 +701,7 @@ const products = [
     },
     {
         name: "Magnetic Heart black and gold",
-        imageUrl: "./resources/products/Magnetic Heart black and gold.png",
+        imageUrl: "./resources/Products/Magnetic Heart black and gold.png",
         description: "Magnetic Heart black and gold",
         price: 69,
         countInStock: 6,
@@ -711,7 +711,7 @@ const products = [
     },
     {
         name: "Classic Black Round Gemstone",
-        imageUrl: "./resources/products/Classic Black Round Gemstone.png",
+        imageUrl: "./resources/Products/Classic Black Round Gemstone.png",
         description: "Classic Black Round Gemstone",
         price: 8,
         countInStock: 8,
@@ -721,7 +721,7 @@ const products = [
     },
     {
         name: "Dark Red Round Gemstone",
-        imageUrl: "./resources/products/Dark Red Round Gemstone.png",
+        imageUrl: "./resources/Products/Dark Red Round Gemstone.png",
         description: "Dark Red Round Gemstone",
         price: 8,
         countInStock: 18,
@@ -731,7 +731,7 @@ const products = [
     },
     {
         name: "Men Titanium Ring",
-        imageUrl: "./resources/products/Men Titanium Ring.png",
+        imageUrl: "./resources/Products/Men Titanium Ring.png",
         description: "Men Titanium Ring",
         price: 49,
         countInStock: 14,
@@ -741,7 +741,7 @@ const products = [
     },
     {
         name: "One White Round Gemstone",
-        imageUrl: "./resources/products/One White Round Gemstone.png",
+        imageUrl: "./resources/Products/One White Round Gemstone.png",
         description: "One White Round Gemstone",
         price: 9,
         countInStock: 23,
@@ -751,7 +751,7 @@ const products = [
     },
     {
         name: "Shell Pendant Fossil Ariel",
-        imageUrl: "./resources/products/SHELL PENDANT FOSSIL ARIEL.png",
+        imageUrl: "./resources/Products/SHELL PENDANT FOSSIL ARIEL.png",
         description: "SHELL PENDANT FOSSIL ARIEL",
         price: 48,
         countInStock: 12,
@@ -761,7 +761,7 @@ const products = [
     },
     {
         name: "Space Round Gemstone",
-        imageUrl: "./resources/products/Space Round Gemstone.png",
+        imageUrl: "./resources/Products/Space Round Gemstone.png",
         description: "Space Round Gemstone",
         price: 8,
         countInStock: 14,
@@ -771,7 +771,7 @@ const products = [
     },
     {
         name: "Vintage 18ct Gold and Platinum",
-        imageUrl: "./resources/products/Vintage 18ct Yellow Gold and Platinum.png",
+        imageUrl: "./resources/Products/Vintage 18ct Yellow Gold and Platinum.png",
         description: "Vintage 18ct Yellow Gold and Platinum",
         price: 12090,
         countInStock: 2,
@@ -781,7 +781,7 @@ const products = [
     },
     {
         name: "Stars Round Gemstone",
-        imageUrl: "./resources/products/Stars Round Gemstone.png",
+        imageUrl: "./resources/Products/Stars Round Gemstone.png",
         description: "Stars Round Gemstone",
         price: 8,
         countInStock: 11,
@@ -791,7 +791,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter F",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter F.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter F.png",
         description: "Gold Pendant Initial Letter F",
         price: 129,
         countInStock: 14,
@@ -801,7 +801,7 @@ const products = [
     },
     {
         name: "Blue Dragonfly Women Cubic",
-        imageUrl: "./resources/products/Blue Dragonfly Women Cubic.png",
+        imageUrl: "./resources/Products/Blue Dragonfly Women Cubic.png",
         description: "Blue Dragonfly Women Cubic",
         price: 17,
         countInStock: 7,
@@ -811,7 +811,7 @@ const products = [
     },
     {
         name: "Silver Greek Ring",
-        imageUrl: "./resources/products/Silver Greek Ring.png",
+        imageUrl: "./resources/Products/Silver Greek Ring.png",
         description: "Silver Greek Ring",
         price: 220,
         countInStock: 4,
@@ -821,7 +821,7 @@ const products = [
     },
     {
         name: "Blue Silver Water Drop Earrings",
-        imageUrl: "./resources/products/Blue Silver Water Drop Earrings.png",
+        imageUrl: "./resources/Products/Blue Silver Water Drop Earrings.png",
         description: "Blue Silver Water Drop Earrings",
         price: 29,
         countInStock: 5,
@@ -831,7 +831,7 @@ const products = [
     },
     {
         name: "Oyster Pearl Locket Cage 1",
-        imageUrl: "./resources/products/Oyster Locket Cage 1.png",
+        imageUrl: "./resources/Products/Oyster Locket Cage 1.png",
         description: "Oyster Locket Cage 1",
         price: 33,
         countInStock: 17,
@@ -841,7 +841,7 @@ const products = [
     },
     {
         name: "Gant Blue Titanium Watch",
-        imageUrl: "./resources/products/Gant Blue Titanium Stainless Steel.png",
+        imageUrl: "./resources/Products/Gant Blue Titanium Stainless Steel.png",
         description: "Gant Blue Titanium Stainless Steel",
         price: 299,
         countInStock: 7,
@@ -851,7 +851,7 @@ const products = [
     },
     {
         name: "Silver Women Flowers Rings",
-        imageUrl: "./resources/products/Silver Women Flowers Rings.png",
+        imageUrl: "./resources/Products/Silver Women Flowers Rings.png",
         description: "Silver Women Flowers Rings",
         price: 201,
         countInStock: 15,
@@ -861,7 +861,7 @@ const products = [
     },
     {
         name: "Diamond Water Drop Earrings",
-        imageUrl: "./resources/products/Diamond Water Drop Earrings.png",
+        imageUrl: "./resources/Products/Diamond Water Drop Earrings.png",
         description: "Diamond Water Drop Earrings",
         price: 489,
         countInStock: 4,
@@ -871,7 +871,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter B",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter B.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter B.png",
         description: "Gold Pendant Initial Letter B",
         price: 129,
         countInStock: 11,
@@ -881,7 +881,7 @@ const products = [
     },
     {
         name: "Dragonfly Women Cubic",
-        imageUrl: "./resources/products/Dragonfly Women Cubic.png",
+        imageUrl: "./resources/Products/Dragonfly Women Cubic.png",
         description: "Dragonfly Women Cubic",
         price: 9,
         countInStock: 22,
@@ -891,7 +891,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 7",
-        imageUrl: "./resources/products/Silver Spinning Ring 7.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 7.png",
         description: "Silver Spinning Ring 7",
         price: 55,
         countInStock: 15,
@@ -901,7 +901,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 1",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 1.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 1.png",
         description: "Gold Plated Hoop Earrings Fashion 1",
         price: 25,
         countInStock: 13,
@@ -911,7 +911,7 @@ const products = [
     },
     {
         name: "Bronze Stone Woman Bracelet",
-        imageUrl: "./resources/products/Bronze Stone Woman Bracelet.png",
+        imageUrl: "./resources/Products/Bronze Stone Woman Bracelet.png",
         description: "Bronze Stone Woman Bracelet",
         price: 24,
         countInStock: 13,
@@ -921,7 +921,7 @@ const products = [
     },
     {
         name: "Women Men CZ Couple",
-        imageUrl: "./resources/products/Women Men CZ Couple.png",
+        imageUrl: "./resources/Products/Women Men CZ Couple.png",
         description: "Women Men CZ Couple",
         price: 39,
         countInStock: 15,
@@ -931,7 +931,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 2",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 2.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 2.png",
         description: "Gold Plated Hoop Earrings Fashion 2",
         price: 25,
         countInStock: 13,
@@ -941,7 +941,7 @@ const products = [
     },
     {
         name: "Silver Spinning Ring 8",
-        imageUrl: "./resources/products/Silver Spinning Ring 8.png",
+        imageUrl: "./resources/Products/Silver Spinning Ring 8.png",
         description: "Silver Spinning Ring 8",
         price: 55,
         countInStock: 15,
@@ -951,7 +951,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 4",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 4.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 4.png",
         description: "Gold Plated Hoop Earrings Fashion 4",
         price: 25,
         countInStock: 13,
@@ -961,7 +961,7 @@ const products = [
     },
     {
         name: "Natural Crystal Stone Pendant",
-        imageUrl: "./resources/products/Natural Crystal Stone Pendant.png",
+        imageUrl: "./resources/Products/Natural Crystal Stone Pendant.png",
         description: "Natural Crystal Stone Pendant",
         price: 29,
         countInStock: 19,
@@ -971,7 +971,7 @@ const products = [
     },
     {
         name: "Gold Plated Earrings Fashion 6",
-        imageUrl: "./resources/products/Gold Plated Hoop Earrings Fashion 6.png",
+        imageUrl: "./resources/Products/Gold Plated Hoop Earrings Fashion 6.png",
         description: "Gold Plated Hoop Earrings Fashion 6",
         price: 25,
         countInStock: 13,
@@ -981,7 +981,7 @@ const products = [
     },
     {
         name: "Mens Rolex Solid 18K Gold",
-        imageUrl: "./resources/products/Mens Rolex Day-Date President Solid 18K Gold.png",
+        imageUrl: "./resources/Products/Mens Rolex Day-Date President Solid 18K Gold.png",
         description: "Mens Rolex Day-Date President Solid 18K Gold",
         price: 16799,
         countInStock: 4,
@@ -991,7 +991,7 @@ const products = [
     },
     {
         name: "Magnetic Heart black",
-        imageUrl: "./resources/products/Magnetic Heart black.png",
+        imageUrl: "./resources/Products/Magnetic Heart black.png",
         description: "Magnetic Heart black",
         price: 69,
         countInStock: 8,
@@ -1001,7 +1001,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter H",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter H.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter H.png",
         description: "Gold Pendant Initial Letter H",
         price: 129,
         countInStock: 6,
@@ -1011,7 +1011,7 @@ const products = [
     },
     {
         name: "Green Dragonfly Women Cubic",
-        imageUrl: "./resources/products/Green Dragonfly Women Cubic.png",
+        imageUrl: "./resources/Products/Green Dragonfly Women Cubic.png",
         description: "Green Dragonfly Women Cubic",
         price: 12,
         countInStock: 4,
@@ -1021,7 +1021,7 @@ const products = [
     },
     {
         name: "Gold Pendant Initial Letter C",
-        imageUrl: "./resources/products/Gold Pendant Initial Letter C.png",
+        imageUrl: "./resources/Products/Gold Pendant Initial Letter C.png",
         description: "Gold Pendant Initial Letter C",
         price: 129,
         countInStock: 14,
@@ -1031,7 +1031,7 @@ const products = [
     },
     {
         name: "Silver Heart Earring",
-        imageUrl: "./resources/products/Silver Heart Earring.png",
+        imageUrl: "./resources/Products/Silver Heart Earring.png",
         description: "Silver Heart Earring",
         price: 30,
         countInStock: 9,
@@ -1041,7 +1041,7 @@ const products = [
     },
     {
         name: "Gant black silver Stainless",
-        imageUrl: "./resources/products/Gant black silver Stainless Steel.png",
+        imageUrl: "./resources/Products/Gant black silver Stainless Steel.png",
         description: "Gant black silver",
         price: 289,
         countInStock: 17,
@@ -1051,7 +1051,7 @@ const products = [
     },
     {
         name: "Red Silver Water Drop Earrings",
-        imageUrl: "./resources/products/Red Silver Water Drop Earrings.png",
+        imageUrl: "./resources/Products/Red Silver Water Drop Earrings.png",
         description: "Red Silver Water Drop Earrings",
         price: 29,
         countInStock: 4,
@@ -1061,7 +1061,7 @@ const products = [
     },
     {
         name: "Classic Diamond Ring",
-        imageUrl: "./resources/products/Classic Diamond Ring.png",
+        imageUrl: "./resources/Products/Classic Diamond Ring.png",
         description: "Classic Diamond Ring",
         price: 1299,
         countInStock: 3,

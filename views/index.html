@@ -24,11 +24,21 @@
     <div class="cont">
             <span style="font-size: 30px; font-weight: 600;">Welcome Royal</span>
            <p>Tiny and perfect ecommerce jewerly</p>
-            Royal is a jewerly shop, 40% off on everything!<br><br>
+            Royal is a jewerly shop, 40% off on Buy Now<br><br>
             <span class="buynow">
             <a class="but" href="/shop">Buy Now</a> <a class="but" href="/locations">Our Locations</a>
             </span>
     </div>
+    <center>
+        <div class="popupcont" id="popupcont">
+            <span class="exitcartbtn"><button style="background-color: transparent; border: none; cursor: pointer;"><img src="resources/close.png" onclick="closepopup()" width="30px"></button></span>
+            <div class="popupcontext">
+                <p style="text-align:left; margin: 0;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 50px; font-weight: 900;">WAIT!</p>
+                <p style="font-weight: 900; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: left;">Check out now our new brands and you'll get<br> <span style="font-size: 17px;">FREE SHIPPING</span></p>
+            <a href="/shop"><button class="popupbtn"><span style="font-size: 18px;">GO TO CART ></span></button></a>
+            </div>
+        </div>
+    </center>
     </header>
     <section><br>
         <center>
@@ -74,8 +84,20 @@
                             </div>
                       </div>
                     </th>
+                    <div class="displaymedia" style="float: right;"><img src="/resources/modelwoman2.jpg" style="height: 600px; margin-right: 50px;"></div>
+                    <div class="product" style="animation: fadeIn 3s; padding-bottom: 0; width: 70%;">
+                    <span style="float: left; padding: 15px;"><img src="/resources/modelman1.jpg" width="325px"></span>
+                    <p>Royal Gift Card | <span style="color: gray;">125.00 $</span><hr></p>
+                   
+                        <input type="text" class="classicinp" placeholder="From"></input>
+                        <input type="text" class="classicinp" placeholder="To(Email)"></input><br><br>
+                        <textarea type="text" class="classicinp" style="resize: horizontal; max-width: 40%; min-width: 10%" placeholder="Message"></textarea><br>
+                        <center>
+                        <a href="/payment" style="text-decoration: none;"><button style="margin-top: 10px;" class="buy">Purchase</button></a>
+                        </center>
+                   
+                    </div>
         </div>
-        <br><br>
         </center>
     </section>
     <footer>
@@ -88,6 +110,6 @@
             </span>
         </div>
     </footer>
-    <script src="public/js.js"></script>
+    <script src="js.js"></script>
 </body>
 </html>

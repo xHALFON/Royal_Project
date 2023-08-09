@@ -87,7 +87,7 @@ router.post('/purchase', async function(req,res) {
         { $inc: { purchased: +1, countInStock: -1 } }
         )
     }
-
+    Passed_value = [];
 });
 
 
@@ -108,7 +108,11 @@ router.post('/purchase', async function(req,res) {
     }
   });
 
-  //payment paymentreached
+  //payment paymentreached   paymentcancled
+  router.get('/paymentcancled', async function(req, res) {
+    Passed_value = [];
+    res.send(`<h1>Payment Canceled <a href='/'>Back to Royal</a></h1>`)
+  });
   router.get('/paymentreached', async function(req, res) {
     res.send(`<h1>Thank you for buying <a href='/'>Back to Royal</a></h1>`)
   });
