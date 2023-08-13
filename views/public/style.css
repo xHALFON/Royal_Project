@@ -36,6 +36,9 @@ nav a:hover{
     font-weight: 600;
     color: #818181;
 }
+#log{
+  font-size: 28px;
+}
 .mainlogo{
   margin-left: 60px;
   float: left;
@@ -142,17 +145,6 @@ header nav a.log{
         outline: none;
         border-color: var(--input-border-focus);
     }
-}
-@media screen and (max-width: 1750px){
-  .displaymedia{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 950px){
-  .popupcont{
-    display: none;
-  }
 }
 /* ------------Section1---------- */
 .thot{
@@ -442,6 +434,7 @@ td{
     border-bottom: 2px solid rgb(59, 57, 54);
     padding: 8px 8px;
     font-size: 18px;
+    width: 25%;
     margin-top: 10px;
     margin-top: 10px;
     outline:none;
@@ -572,3 +565,88 @@ td{
 /*---------------payment------------------*/
 /* inside the file                        */
 /*----------------------------------------*/
+
+/* ----------Responsive----------- */
+@media screen and (max-width: 950px){
+  .popupcont{
+    display: none;
+  }
+}
+.modelman1{
+  width: 325px;
+}
+@media screen and (max-width: 1750px){
+  .displaymedia{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px){
+  .modelman1{
+    display: none;
+  }
+}
+/*nav*/
+@media screen and (max-width: 1176px){
+  nav{
+      padding: 40px;
+  }
+  nav a{
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .mainlogo{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 964px){
+  nav{
+    padding: 30px;
+  }
+  nav a{
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .mainlogo{
+    width: 170px;
+  }
+  #log{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 653px){
+  nav{
+      display: block;
+      padding-top:100px;
+  }
+  .mainlogo{
+    margin-left: 30%;
+  }
+  nav a{
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 415px){
+  nav{
+    padding-top: 80px;
+  }
+  nav a{
+    margin-top: 0;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  #log{
+    font-size: 20px;
+  }
+  iframe{
+    width: 300px;
+    height: 300px;
+  }
+  .container{
+    margin-left: 4%;
+  }
+}

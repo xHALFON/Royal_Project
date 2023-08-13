@@ -394,7 +394,7 @@ function cartdis(){
         cartDisplay = 1 - cartDisplay;
         document.getElementById('toblur1').style.filter = 'blur(5px)';
         document.getElementById('toblur2').style.filter = 'blur(5px)';
-        document.getElementById('toblur3').style.filter = 'blur(5px)';
+        document.getElementById('toblur3').style.display = 'none';
         cart.style.display = 'block';
         cart.style.animation = "fadeIn 1s";
         cart.style.webkitAnimation = "fadeIn 1s";
@@ -403,7 +403,7 @@ function cartdis(){
         cart.style.display = 'none';
         document.getElementById('toblur1').style.filter = 'blur(0px)';
         document.getElementById('toblur2').style.filter = 'blur(0px)';
-        document.getElementById('toblur3').style.filter = 'blur(0px)';
+        document.getElementById('toblur3').style.display = 'block';
     }
 }
 
